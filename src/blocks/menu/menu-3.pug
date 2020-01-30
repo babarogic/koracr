@@ -1,0 +1,88 @@
+//- PARTS
+mixin menu-3-nav()
+  .navbar-nav.m-auto
+    .nav-item
+      a(href='').nav-link.text-dark.pl-0 First
+    .nav-item
+      a(href='').nav-link.text-dark Second
+    .nav-item
+      a(href='').nav-link.text-dark Third
+    .nav-item
+      a(href='').nav-link.text-dark Fourth
+    .nav-item
+      a(href='').nav-link.text-dark Fifth
+    .nav-item
+      a(href='').nav-link.text-dark Sixth
+
+mixin menu-3()
+  .navbar.navbar-expand-lg.justify-content-between
+    .d-lg-none
+      a.navbar-toggler.mr-1(href="" data-id='menu-3-sidebar-toggle')
+        img(src='./assets/glyphs/burger.svg')
+
+    .col-3.px-0.mr-auto
+      img(src='./assets/logos/acme.svg' width='62')
+
+    .collapse.navbar-collapse.weight-500
+      +menu-3-nav()
+
+    .col-3.d-flex.justify-content-end.pr-0.weight-500
+      .nav-item
+        a(href='').nav-link.text-dark
+          img(src='./assets/glyphs/profile.svg')
+          .d-none.d-lg-inline.ml-2 Profile
+
+      .nav-item
+        a(href='').nav-link.d-flex.align-items-center.text-dark.pr-0
+          img(src='./assets/glyphs/bag.svg').d-lg-none
+          .d-none.d-lg-inline.mr-2 Cart
+          div.badge.badge-primary 3
+
+  .navbar-side(id='menu-3-sidebar' data-id='menu-3-sidebar-close')
+    .navbar-side-content.d-flex.flex-column.justify-content-between
+      .weight-700
+        a.navbar-side-close.mb-4(href='' data-id='menu-3-sidebar-close')
+          img(src='./assets/glyphs/close.svg' width='32')
+        +menu-3-nav()
+
+      div
+        p.mb-3
+          a(href='').transparent-invert-link
+            img(src="./assets/glyphs/instagram-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/facebook-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/twitter-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/pinterest-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/thumbler-small.svg" width="16")
+
+        p.small.mb-0
+          span.d-block.d-xl-inline.text-muted.mb-1.mb-xl-0.mr-2 &copy; 2019 Acme. All right reserved.
+
+          a(href='').text-muted.mr-2
+            span Privacy Policy
+          a(href='').text-muted
+            span Terms of Service
+    .navbar-side-content.weight-700
+      a.navbar-side-close.mb-4(href='' data-id='menu-4-sidebar-close')
+        img(src='./assets/glyphs/close.svg' width='32')
+
+  //- SCRIPT
+  script.
+    $(function() {
+      $('[data-id=menu-3-sidebar-toggle]').click(function(e) {
+        e.preventDefault();
+        $('#menu-3-sidebar').toggleClass('show');
+      });
+
+      $('[data-id=menu-3-sidebar-close]').click(function(e) {
+        e.preventDefault();
+        $('#menu-3-sidebar').removeClass('show');
+      });
+    });

@@ -1,0 +1,17 @@
+mixin forms-6()
+  .row.justify-content-center.text-center.py-5
+    .col-12.col-md-6.col-lg-4
+      form.mb-3
+        .form-group
+          input(type='text' placeholder='Email').form-control.form-control-lg
+        .form-group
+          .custom-select.custom-select-lg
+            select(placeholder='Group')
+              option(value='1') Topic One
+              option(value='2') Topic Two
+              option(value='3') Topic Three
+              option(value='4') Topic Four
+        .form-group
+          textarea(placeholder='Feedback' rows='4').form-control.form-control-lg
+
+        button.btn.btn-lg.btn-primary.btn-block Send your feedback

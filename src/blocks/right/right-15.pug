@@ -1,0 +1,47 @@
+mixin right-15()
+  .row.justify-content-between.align-items-center.py-5
+    .col-12.col-md-6.pl-md-0.mb-4.mb-md-0
+
+      .swiper.has-outside-pagination
+        .swiper-container(id='slider-right-15')
+          .swiper-wrapper
+            .swiper-slide
+              img(src="./assets/pictures/image-555x380.png").w-100
+            .swiper-slide
+              img(src="./assets/pictures/image-555x380.png").w-100
+            .swiper-slide
+              img(src="./assets/pictures/image-555x380.png").w-100
+
+        .swiper-pagination.swiper-pagination-outside(id='slider-right-15-pagination')
+
+        a.carousel-control-prev(id='slider-right-15-prev' href='')
+          .carousel-control-prev-icon
+        a.carousel-control-next(id='slider-right-15-next' href='')
+          .carousel-control-next-icon
+
+    .col-12.col-md-5
+      h3 Medium length headline
+      p.mb-4 Change the color to match your brand or vision, add your logo, choose the perfect thumbnail, remove the playbar, add speed controls, and more. Increase engagement with CTAs and custom end screens, or keep your video private and password-protected.
+      .row
+        .col-6
+          .price-large.mb-1 32
+            span.price-unit.ml-1 GB
+          .small Gorgeous, high-quality video sharing on desktop, mobile, tablet
+        .col-6
+          .price-large.mb-1 2.6
+            span.price-unit.ml-1 Million
+          .small Gorgeous, high-quality video sharing on desktop, mobile, tablet
+
+  // Script
+  script.
+    var mySwiper = new Swiper('#slider-right-15', {
+      speed: 400,
+      navigation: {
+        nextEl: '#slider-right-15-next',
+        prevEl: '#slider-right-15-prev',
+      },
+      pagination: {
+        el: '#slider-right-15-pagination',
+        clickable: true
+      }
+    });

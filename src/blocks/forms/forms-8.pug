@@ -1,0 +1,26 @@
+mixin forms-8()
+  .row.justify-content-center.py-5
+    .col-12.col-md-9.col-lg-7
+      form
+        .form-group
+          label(for='forms-8-email').small Email
+          input(type='text' placeholder='Email' id='forms-8-email').form-control.form-control-lg
+
+        .form-group
+          label(for='forms-8-name').small Your name
+          input(type='text' placeholder='Your name' id='forms-8-name').form-control.form-control-lg
+
+        .form-group
+          label(for='forms-8-topic').small Choose a topic
+          .custom-select.custom-select-lg
+            select(type='text' placeholder='ex. System requirements')
+              option System requirements
+              option Where can I learn more about how to get started?
+              option Is Acme available for Linux?
+              option What about a version for iOS?
+
+        .form-group.mb-7
+          label(for='forms-8-topic').small Label
+          textarea(placeholder='Let us know' rows='4').form-control.form-control-lg
+
+        button.btn.btn-lg.btn-primary.btn-block Send Your Feedback

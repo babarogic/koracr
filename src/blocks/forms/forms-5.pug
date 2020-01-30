@@ -1,0 +1,19 @@
+mixin forms-5()
+  .row.justify-content-center.py-5
+    .col-12.col-md-6.col-lg-4
+      form
+        .form-group
+          input(type='text' placeholder='Name').form-control.form-control-lg
+        .form-group
+          input(type='text' placeholder='Email').form-control.form-control-lg
+        .form-group
+          input(type='password' placeholder='Password').form-control.form-control-lg
+        .form-group
+          input(type='password' placeholder='Confirm password').form-control.form-control-lg
+
+        .form-group.custom-control
+          label.custom-checkbox.mb-0
+            input(type='checkbox').custom-control-input
+            .custom-control-label.small Subscribe to the newsletter
+
+        button.btn.btn-lg.btn-primary.btn-block Action

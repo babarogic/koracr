@@ -1,0 +1,59 @@
+mixin gallery-16()
+  .swiper.swiper-overflow.py-5
+    .container
+      .swiper-container.row(id='slider-gallery-16')
+        .swiper-wrapper
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+          .swiper-slide.col-11.col-md-3
+            img(src="./assets/pictures/image-540x540.png").w-100
+
+      a.carousel-control-prev.carousel-control-outside(id='slider-gallery-16-prev' href='')
+        .carousel-control-prev-icon
+      a.carousel-control-next.carousel-control-outside(id='slider-gallery-16-next' href='')
+        .carousel-control-next-icon
+
+  // Script
+  script.
+    var mySwiper16 = new Swiper('#slider-gallery-16', {
+      speed: 400,
+      navigation: {
+        nextEl: '#slider-gallery-16-next',
+        prevEl: '#slider-gallery-16-prev',
+      },
+      pagination: {
+        el: '#slider-gallery-16-pagination',
+        clickable: true
+      },
+      slidesPerView: 'auto',
+      slideToClickedSlide: true
+    });
+
+    $(mySwiper16.slides).each(function () {
+      $(this).on('click', function () {
+        if (mySwiper16.activeIndex >= $(this).index()) {
+          mySwiper16.slidePrev();
+        } else {
+          mySwiper16.slideNext();
+        }
+      });
+    });

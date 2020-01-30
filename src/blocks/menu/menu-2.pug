@@ -1,0 +1,81 @@
+//- PARTS
+mixin menu-2-nav()
+  .navbar-nav
+    .nav-item
+      a(href='').nav-link.text-dark.pl-0 First
+    .nav-item
+      a(href='').nav-link.text-dark Second
+    .nav-item
+      a(href='').nav-link.text-dark Third
+    .nav-item
+      a(href='').nav-link.text-dark Fourth
+    .nav-item
+      a(href='').nav-link.text-dark Fifth
+
+mixin menu-2()
+  .navbar.navbar-expand-lg.justify-content-between
+    .col-3.d-lg-none.px-0
+      a.navbar-toggler.mr-1(href="" data-id='menu-2-sidebar-toggle')
+        img(src='./assets/glyphs/burger.svg')
+
+    .col-5.collapse.navbar-collapse.weight-500.px-0
+      +menu-2-nav()
+
+    div
+      img(src='./assets/logos/acme.svg' width='62')
+
+    .col-3.d-lg-none.text-right.px-0
+      a(href='')
+        img(src='./assets/glyphs/star-primary.svg' width='24')
+
+    .col-5.d-none.d-lg-block.text-right.px-0
+      a(href='').btn.btn-primary Action
+
+  .navbar-side(id='menu-2-sidebar' data-id='menu-2-sidebar-close')
+    .navbar-side-content.d-flex.flex-column.justify-content-between
+      .weight-700
+        a.navbar-side-close.mb-4(href='' data-id='menu-2-sidebar-close')
+          img(src='./assets/glyphs/close.svg' width='32')
+        +menu-2-nav()
+
+      div
+        p.mb-3
+          a(href='').transparent-invert-link
+            img(src="./assets/glyphs/instagram-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/facebook-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/twitter-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/pinterest-small.svg" width="16")
+
+          a(href='').transparent-invert-link.ml-2
+            img(src="./assets/glyphs/thumbler-small.svg" width="16")
+
+        p.small.mb-0
+          span.d-block.d-xl-inline.text-muted.mb-1.mb-xl-0.mr-2 &copy; 2019 Acme. All right reserved.
+
+          a(href='').text-muted.mr-2
+            span Privacy Policy
+          a(href='').text-muted
+            span Terms of Service
+    .navbar-side-content.weight-700
+      a.navbar-side-close.mb-4(href='' data-id='menu-2-sidebar-close')
+        img(src='./assets/glyphs/close.svg' width='32')
+
+  //- SCRIPT
+  script.
+    $(function() {
+      $('[data-id=menu-2-sidebar-toggle]').click(function(e) {
+        e.preventDefault();
+        $('#menu-2-sidebar').toggleClass('show');
+      });
+
+      $('[data-id=menu-2-sidebar-close]').click(function(e) {
+        e.preventDefault();
+        $('#menu-2-sidebar').removeClass('show');
+      });
+    });

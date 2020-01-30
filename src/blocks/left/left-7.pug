@@ -1,0 +1,46 @@
+mixin left-7()
+  .row.justify-content-between.align-items-center.py-5
+    .col-12.col-md-5.order-2.order-md-1
+      h1 Long headline to turn your visitors into users
+      p.mb-4 Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.
+      .row
+        .col-6
+          h4 Feature one
+          .small Gorgeous, high-quality video sharing on desktop, mobile, tablet
+        .col-6
+          h4 Feature two
+          .small Gorgeous, high-quality video sharing on desktop, mobile, tablet
+
+    .col-12.col-md-6.order-1.order-md-2.pl-md-0.mb-4.mb-md-0
+
+      .swiper.has-outside-pagination
+        .swiper-container(id='slider-left-7')
+          .swiper-wrapper
+            .swiper-slide
+              img(src="./assets/pictures/image-555x380.png").w-100
+            .swiper-slide
+              img(src="./assets/pictures/image-555x380.png").w-100
+            .swiper-slide
+              img(src="./assets/pictures/image-555x380.png").w-100
+
+        .swiper-pagination.swiper-pagination-outside(id='slider-left-7-pagination')
+
+        a.carousel-control-prev(id='slider-left-7-prev' href='')
+          .carousel-control-prev-icon
+        a.carousel-control-next(id='slider-left-7-next' href='')
+          .carousel-control-next-icon
+
+  // Script
+  script.
+    var mySwiper = new Swiper('#slider-left-7', {
+      speed: 400,
+      navigation: {
+        nextEl: '#slider-left-7-next',
+        prevEl: '#slider-left-7-prev',
+      },
+      pagination: {
+        el: '#slider-left-7-pagination',
+        clickable: true
+      }
+    });
+

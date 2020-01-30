@@ -1,0 +1,58 @@
+mixin forms-7()
+  .row.justify-content-center.py-5
+    .col-12.col-md-9.col-lg-7
+      form.mb-3
+        .row
+          .col-12.col-md-6.pr-md-1
+            .form-group
+              input(type='text' placeholder='Name').form-control.form-control-lg
+
+          .col-12.col-md-6.pl-md-1
+            .form-group
+              input(type='text' placeholder='Surname').form-control.form-control-lg
+
+        .form-group
+          input(type='text' placeholder='Email').form-control.form-control-lg
+        .form-group.input-group.input-group-lg
+          input(type='password' placeholder='Password' data-role='forms-7-password').form-control.form-control-lg
+          .input-group-control
+            a(href='' data-role='forms-7-toggle-password' data-target='forms-7-password').transparent-link
+              img(src='./assets/glyphs/hide-off.svg' width='24')
+
+        .form-group.input-group.input-group-lg
+          input(type='password' placeholder='Confirm password' data-role='forms-7-confirm').form-control.form-control-lg
+          .input-group-control
+            a(href='' data-role='forms-7-toggle-password' data-target='forms-7-confirm').transparent-link
+              img(src='./assets/glyphs/hide-off.svg' width='24')
+
+        .form-group.custom-control
+          label.custom-checkbox.mb-0
+            input(type='checkbox').custom-control-input
+            .custom-control-label.small Subscribe to the newsletter
+
+        button.btn.btn-lg.btn-primary.btn-block Action
+
+      .small.text-center.text-muted
+        = 'By signing in you agree with the '
+        a(href='').weight-500.text-muted
+          span Terms and Conditions
+        = ' and '
+        a(href='').weight-500.text-muted
+          span Privacy Policy
+
+  script.
+    $(function () {
+      const PASS_ICONS = {
+        hide: './assets/glyphs/hide-off.svg',
+        show: './assets/glyphs/hide-on.svg',
+      };
+
+      $('[data-role=forms-7-toggle-password]').click(function(e) {
+        e.preventDefault();
+        const $target = $('[data-role='+ $(this).attr('data-target') + ']');
+        const isHidden = $target.attr('type') === 'password';
+
+        $(this).find('img').attr('src', PASS_ICONS[isHidden ? 'show' : 'hide']);
+        $target.attr('type', isHidden ? 'text' : 'password');
+      });
+    });

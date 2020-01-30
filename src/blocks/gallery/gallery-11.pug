@@ -1,0 +1,32 @@
+mixin gallery-11()
+  .swiper
+    .swiper-container(id='slider-gallery-11')
+      .swiper-wrapper
+        .swiper-slide
+          .images-ratio.ratio-16-9(style='background-image: url(./assets/pictures/image-1440x600.png)')
+        .swiper-slide
+          .images-ratio.ratio-16-9(style='background-image: url(./assets/pictures/image-1440x600.png)')
+        .swiper-slide
+          .images-ratio.ratio-16-9(style='background-image: url(./assets/pictures/image-1440x600.png)')
+
+    .swiper-pagination(id='slider-gallery-11-pagination')
+
+    a.carousel-control-prev(id='slider-gallery-11-prev' href='')
+      .carousel-control-prev-icon
+    a.carousel-control-next(id='slider-gallery-11-next' href='')
+      .carousel-control-next-icon
+
+  // Script
+  script.
+    var mySwiper11 = new Swiper('#slider-gallery-11', {
+      speed: 400,
+      navigation: {
+        nextEl: '#slider-gallery-11-next',
+        prevEl: '#slider-gallery-11-prev',
+      },
+      pagination: {
+        el: '#slider-gallery-11-pagination',
+        clickable: true
+      },
+      slidesPerView: 'auto'
+    });

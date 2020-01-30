@@ -1,0 +1,35 @@
+mixin gallery-13()
+  .container
+    .row.justify-content-center.py-5
+      .col-12.col-md-8.col-lg-6
+        .swiper.has-outside-pagination
+          .swiper-container(id='slider-gallery-13')
+            .swiper-wrapper
+              .swiper-slide
+                .images-ratio.ratio-4-3(style='background-image: url(./assets/pictures/image-555x380.png)')
+              .swiper-slide
+                .images-ratio.ratio-4-3(style='background-image: url(./assets/pictures/image-555x380.png)')
+              .swiper-slide
+                .images-ratio.ratio-4-3(style='background-image: url(./assets/pictures/image-555x380.png)')
+
+          .swiper-pagination.swiper-pagination-outside(id='slider-gallery-13-pagination')
+
+          a.carousel-control-prev.carousel-control-outside(id='slider-gallery-13-prev' href='')
+            .carousel-control-prev-icon
+          a.carousel-control-next.carousel-control-outside(id='slider-gallery-13-next' href='')
+            .carousel-control-next-icon
+
+    // Script
+  script.
+    var mySwiper13 = new Swiper('#slider-gallery-13', {
+      speed: 400,
+      navigation: {
+        nextEl: '#slider-gallery-13-next',
+        prevEl: '#slider-gallery-13-prev',
+      },
+      pagination: {
+        el: '#slider-gallery-13-pagination',
+        clickable: true
+      },
+      slidesPerView: 'auto'
+    });

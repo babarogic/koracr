@@ -1,0 +1,55 @@
+mixin customers-5()
+  .swiper.py-5
+    .swiper-container(id='slider-customers-5')
+      .swiper-wrapper
+        .swiper-slide.col-12.col-md-6.text-center
+          .row.justify-content-center
+            .col-12.col-lg-8
+              img(src='./assets/pictures/userpic.png' width='60' height='60').rounded.mb-3
+              p.mb-3 “Given the enormous wealth creation from cryptocurrency, and the future potential upside, I believe there is a rare opportunity to create a large non-profit fund.”
+              p.mb-0
+                span.weight-500 Name Surname
+              p.small.mb-0 Founder, Acme Company
+
+        .swiper-slide.col-12.col-md-6.text-center
+          .row.justify-content-center
+            .col-12.col-lg-8
+              img(src='./assets/pictures/userpic.png' width='60' height='60').rounded.mb-3
+              p.mb-3 “All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”
+              p.mb-0
+                span.weight-500 Name Surname
+              p.small.mb-0 Founder, Acme Company
+
+        .swiper-slide.col-12.col-md-6.text-center
+          .row.justify-content-center
+            .col-12.col-lg-8
+              img(src='./assets/pictures/userpic.png' width='60' height='60').rounded.mb-3
+              p.mb-3 “Given the enormous wealth creation from cryptocurrency, and the future potential upside, I believe there is a rare opportunity to create a large non-profit fund.”
+              p.mb-0
+                span.weight-500 Name Surname
+              p.small.mb-0 Founder, Acme Company
+
+        .swiper-slide.col-12.col-md-6.text-center
+          .row.justify-content-center
+            .col-12.col-lg-8
+              img(src='./assets/pictures/userpic.png' width='60' height='60').rounded.mb-3
+              p.mb-3 “All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”
+              p.mb-0
+                span.weight-500 Name Surname
+              p.small.mb-0 Founder, Acme Company
+
+    a.carousel-control-prev.carousel-control-outside(id='slider-customers-5-prev' href='')
+      .carousel-control-prev-icon
+    a.carousel-control-next.carousel-control-outside(id='slider-customers-5-next' href='')
+      .carousel-control-next-icon
+
+  // Script
+  script.
+    var mySwiper = new Swiper('#slider-customers-5', {
+      speed: 400,
+      navigation: {
+        nextEl: '#slider-customers-5-next',
+        prevEl: '#slider-customers-5-prev',
+      },
+      slidesPerView: 'auto'
+    });
