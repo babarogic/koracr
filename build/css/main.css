@@ -6673,6 +6673,7 @@ a.text-white:hover, a.text-white:focus {
     padding-top: 36.93%; }
 
 .section-break {
+  color: #000000;
   background: #f2f2f2;
   text-align: center;
   line-height: 30px;
