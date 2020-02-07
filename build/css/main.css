@@ -3358,13 +3358,6 @@ ol.custom-list {
       .navbar-up .navbar-up-content {
         max-width: 100%;
         height: 40vh; } }
-    @media (min-width: 768px) {
-      .navbar-up .navbar-up-content {
-        padding-left: 40px;
-        padding-right: 40px; } }
-    @media (min-width: 992px) {
-      .navbar-up .navbar-up-content {
-        padding-top: 30px; } }
   .navbar-up .navbar-up-close {
     display: block;
     margin-left: -5px;
