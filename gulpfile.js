@@ -25,6 +25,7 @@ gulp.task('copy', function () {
 gulp.task('watch', () => {
   gulp.watch(['src/*.pug', 'src/**/*.pug'], ['pug']);
   gulp.watch(['src/styles/*.scss', 'src/styles/bootstrap/*.scss'], ['sass']);
+  gulp.watch('build/**/*', ['copy'])
 });
 
 gulp.task('default', ['pug', 'sass', 'copy']);
