@@ -17,9 +17,14 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./build/css'));
 });
 
+gulp.task('copy', function () {
+  gulp.src('build/**/*')
+      .pipe(gulp.dest('./docs/'));
+});
+
 gulp.task('watch', () => {
   gulp.watch(['src/*.pug', 'src/**/*.pug'], ['pug']);
   gulp.watch(['src/styles/*.scss', 'src/styles/bootstrap/*.scss'], ['sass']);
 });
 
-gulp.task('default', ['pug', 'sass']);
+gulp.task('default', ['pug', 'sass', 'copy']);

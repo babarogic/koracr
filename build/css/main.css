@@ -3052,7 +3052,7 @@ ol.custom-list {
     padding-right: 0;
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
-    position: static;
+    position: absolute;
     float: none; }
 
 .navbar-text {

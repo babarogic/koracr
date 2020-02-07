@@ -16,37 +16,45 @@
 <body>
 	<div class="wrapper">
 
-		<!--HEADER-->
+		<!-- HEADER -->
 		<header id="header" class="navbar navbar-expand-xs">
 			<div class="col-4">
-				<h2 class="m-0 p-0">KoracR</h2>
+				<a href="index.html" class="text-dark">
+					<h2 class="m-0 p-0">KoracR</h2>
+				</a>
 			</div>
 			<div class="col col-lg-4 px-0">
 				<div class="nav-item text-right text-lg-center">
-					<a class="navbar-toggler pl-0" href="" data-id="headers-5-sidebar-toggle">
+					<a class="navbar-toggler pl-0" href="" data-id="header-up-toggle">
 						<img src="./assets/glyphs/burger.svg" /></a>
 				</div>
 			</div>
 
 			<div class="col-4 d-none d-lg-flex justify-content-end align-items-center weight-500 d-none d-lg-block">
 				<div class="navbar-nav flex-row">
-					<div class="nav-item"><a class="nav-link text-dark" href="proizvodi.html">Proizvodi</a></div>
+					<div class="nav-item dropdown">
+						<a class="nav-link text-dark dropdown-toggle" href="proizvodi.html" id="proizvodi-dropdown"
+							data-toggle="dropdown">Proizvodi</a>
+						<div class="dropdown-menu" aria-labelledby="proizvodi-dropdown">
+							<a class="dropdown-item" href="">Action 1</a>
+							<a class="dropdown-item" href="">Action 2</a>
+							<a class="dropdown-item" href="">Action 3</a>
+						</div>
+					</div>
 					<div class="nav-item"><a class="nav-link text-dark" href="onama.html">O nama</a></div>
 					<div class="nav-item"><a class="nav-link text-dark" href="kontakt.html">Kontakt</a></div>
 				</div>
 			</div>
 		</header>
 
-		<div class="navbar-up" id="headers-5-sidebar" data-id="headers-5-sidebar-close">
+		<div class="navbar-up" id="header-up" data-id="header-up-close">
 			<div class="navbar navbar-up-content navbar-expand-xs">
 				<div class="col-4">
-					<a href="index.html" class="text-dark">
-						<h2 class="m-0 p-0">KoracR</h2>
-					</a>
+					<h2 class="m-0 p-0">KoracR</h2>
 				</div>
 				<div class="col col-lg-4">
 					<div class="nav-item text-right text-md-center">
-						<a class="navbar-up-close" href="" data-id="headers-5-sidebar-close">
+						<a class="navbar-up-close" href="" data-id="header-up-close">
 							<img src="./assets/glyphs/close.svg" width="24" />
 						</a>
 					</div>
@@ -140,8 +148,7 @@
 				</div>
 			</div>
 		</div>
-		<!--HEADER - end-->
-
+		<!-- HEADER END -->
 
 
 		<section class="bg-light">
@@ -203,11 +210,8 @@
 			</div>
 		</section>
 
-		<!--FORMA - start-->
-
-
+		<!--FORMA -->
 		<section class="container">
-
 			<div class="row justify-content-center py-5">
 				<div class="col-12 col-md-9 col-lg-7">
 					<form>
@@ -231,17 +235,14 @@
 					</form>
 				</div>
 			</div>
-
 		</section>
+		<!--FORMA END-->
 
-
-		<!--FORMA - end-->
-
-		<!-- footer-->
-
+		<!-- FOOTER -->
 		<footer class="container-fluid">
 			<div class="row align-items-center py-4">
-				<div class="col-12 col-lg-2 text-center text-lg-left"><img src="./assets/logos/acme.svg" width="91" /></div>
+				<div class="col-12 col-lg-2 text-center text-lg-left"><img src="./assets/logos/acme.svg" width="91" />
+				</div>
 				<div class="col-12 col-lg-8 navbar-expand text-center weight-500">
 					<div class="navbar-nav d-block d-lg-flex justify-content-center">
 						<div class="nav-item"><a class="nav-link text-dark" href="">First page</a></div>
@@ -266,24 +267,24 @@
 			</div>
 			<div class="row pb-3">
 				<div class="col-12 text-center small"><span class="text-muted mr-1">&copy; 2019 Acme. All right
-						reserved.</span><a class="d-block d-lg-inline text-muted mx-1" href=""><span>Privacy Policy</span></a><a
-						class="d-block d-lg-inline text-muted mx-1" href=""><span>Terms of Service</span></a></div>
+						reserved.</span><a class="d-block d-lg-inline text-muted mx-1" href=""><span>Privacy
+							Policy</span></a><a class="d-block d-lg-inline text-muted mx-1" href=""><span>Terms of
+							Service</span></a></div>
 			</div>
 		</footer>
-
-		<!-- FOOTER - end -->
+		<!-- FOOTER END -->
 
 	</div>
 
 	<script>
 		$(function () {
-			$('[data-id=headers-5-sidebar-toggle]').click(function (e) {
+			$('[data-id=header-up-toggle]').click(function (e) {
 				e.preventDefault();
-				$('#headers-5-sidebar').toggleClass('show');
+				$('#header-up').toggleClass('show');
 			});
-			$('[data-id=headers-5-sidebar-close]').click(function (e) {
+			$('[data-id=header-up-close]').click(function (e) {
 				e.preventDefault();
-				$('#headers-5-sidebar').removeClass('show');
+				$('#header-up').removeClass('show');
 			});
 		});
 	</script>
