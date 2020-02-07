@@ -1,2 +1,69 @@
 @import 'bootstrap/bootstrap';
-@import 'custom';
+
+
+.section-break {
+  color: #000000;
+  background: #f2f2f2;
+  text-align: center;
+  line-height: 30px;
+  font-size: 11px;
+}
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+// POCETNA
+//// Header Nav
+.navbar-up .nav-products {
+  @include media-breakpoint-down('md') {
+    padding-bottom: 1rem !important;
+  }
+}
+
+.navbar-up .nav-products .nav-link {
+  padding: 0 !important;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+#header .navbar-nav {
+  flex-direction: row;
+
+  .nav-item {
+    font-weight: bold;
+
+    &:nth-child(-n+2) {
+      padding-right: 1rem;
+
+      @include media-breakpoint-up('lg') {
+        padding-right: 2rem !important;
+      }
+    }
+  }
+}
+
+
+//// Hero Cover
+
+
+
+
+//// Company About
+
+
+
+
+//// Products
+
+
+
+
+//// Technology
+
+
+
+
+//// Footer

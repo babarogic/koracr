@@ -25,11 +25,11 @@
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properities so that content nested within behave properly.
-  > .container,
-  > .container-fluid {
+  >.container,
+  >.container-fluid {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
@@ -144,8 +144,9 @@
 
     &#{$infix} {
       @include media-breakpoint-down($breakpoint) {
-        > .container,
-        > .container-fluid {
+
+        >.container,
+        >.container-fluid {
           padding-right: 0;
           padding-left: 0;
         }
@@ -169,13 +170,13 @@
         }
 
         // For nesting containers, have to redeclare for alignment purposes
-        > .container,
-        > .container-fluid {
+        >.container,
+        >.container-fluid {
           flex-wrap: nowrap;
         }
 
         .navbar-collapse {
-          display: flex !important;  // stylelint-disable-line declaration-no-important
+          display: flex !important; // stylelint-disable-line declaration-no-important
 
           // Changes flex-bases to auto because of an IE10 bug
           flex-basis: auto;
@@ -217,8 +218,8 @@
       }
     }
 
-    .show > .nav-link,
-    .active > .nav-link,
+    .show>.nav-link,
+    .active>.nav-link,
     .nav-link.show,
     .nav-link.active {
       color: $navbar-light-active-color;
@@ -236,6 +237,7 @@
 
   .navbar-text {
     color: $navbar-light-color;
+
     a {
       color: $navbar-light-active-color;
 
@@ -269,8 +271,8 @@
       }
     }
 
-    .show > .nav-link,
-    .active > .nav-link,
+    .show>.nav-link,
+    .active>.nav-link,
     .nav-link.show,
     .nav-link.active {
       color: $navbar-dark-active-color;
@@ -288,6 +290,7 @@
 
   .navbar-text {
     color: $navbar-dark-color;
+
     a {
       color: $navbar-dark-active-color;
 
@@ -319,6 +322,7 @@
     .nav-link {
       font-size: $navbar-side-font-size;
       line-height: $navbar-side-line-height-sm;
+
       @include media-breakpoint-up('md') {
         font-size: $navbar-side-font-size * 1.25;
         line-height: $navbar-side-line-height;
@@ -385,18 +389,20 @@
     transition: 0.2s ease transform;
     align-items: flex-start;
 
+    @include media-breakpoint-down('md') {
+      overflow: scroll;
+    }
+
     .nav-link {
       font-size: $navbar-side-font-size;
-      line-height: $navbar-side-line-height-sm;
+
       @include media-breakpoint-up('md') {
         font-size: $navbar-side-font-size * 1.25;
-        line-height: $navbar-side-line-height;
       }
 
       @include media-breakpoint-up('lg') {
         // font-size: $navbar-side-font-size * 1.75;
         font-size: $font-size-base;
-        line-height: $navbar-side-line-height-lg;
       }
     }
 
@@ -406,7 +412,7 @@
 
     @include media-breakpoint-up('sm') {
       max-width: 100%;
-      height: 40vh;
+      height: auto;
     }
 
     @include media-breakpoint-up('md') {
@@ -427,11 +433,14 @@
 
   &.show {
     transform: translateY(0);
-    background-color: rgba($black, .1);
-    transition: 0.2s ease background-color, 0s linear transform 0s;
+    background-color: rgba($black, .25);
+    transition: 0.4s ease-in background-color, 0s ease-in transform 0s;
 
     .navbar-up-content {
       transform: translateY(0);
+      margin: 0.5rem;
+      border-radius: 0.25rem;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
     }
   }
 }
