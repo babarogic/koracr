@@ -37,6 +37,7 @@ gulp.task('resetPages', (done) => {
 });
 
 gulp.task('copy', function () {
+  
   gulp.src('build/**/*')
       .pipe(gulp.dest('./docs/'));
 });
