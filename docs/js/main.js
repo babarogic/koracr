@@ -13,42 +13,43 @@ $(function () {
 
 
 
-var mySwiper11 = new Swiper('#slider-gallery-11', {
+var mySwiperHome = new Swiper('#home-gallery', {
   speed: 400,
+  loop: true,
   navigation: {
-    nextEl: '#slider-gallery-11-next',
-    prevEl: '#slider-gallery-11-prev',
+    nextEl: '#home-gallery-next',
+    prevEl: '#home-gallery-prev',
   },
   pagination: {
-    el: '#slider-gallery-11-pagination',
+    el: '#home-gallery-pagination',
     clickable: true
   },
   slidesPerView: 'auto'
 });
 
 
-var mySwiper = new Swiper('#slider-left-7', {
+var mySwiperProduct = new Swiper('#product-gallery', {
   speed: 400,
   loop: true,
   navigation: {
-    nextEl: '#slider-left-7-next',
-    prevEl: '#slider-left-7-prev',
+    nextEl: '#product-gallery-next',
+    prevEl: '#product-gallery-prev',
   },
   pagination: {
-    el: '#slider-left-7-pagination',
+    el: '#product-gallery-pagination',
     clickable: true
   }
 });
 
-var mySwiper12 = new Swiper('#slider-gallery-12', {
+var mySwiperProductTwo = new Swiper('#productTwo-gallery', {
   speed: 400,
   loop: true,
   navigation: {
-    nextEl: '#slider-gallery-12-next',
-    prevEl: '#slider-gallery-12-prev',
+    nextEl: '#productTwo-gallery-next',
+    prevEl: '#productTwo-gallery-prev',
   },
   pagination: {
-    el: '#slider-gallery-12-pagination',
+    el: '#productTwo-gallery-pagination',
     clickable: true
   },
 
