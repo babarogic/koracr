@@ -9,6 +9,17 @@ $(function () {
   });
 });
 
+$(function () {
+  $('[data-id=header-right-toggle]').click(function (e) {
+    e.preventDefault();
+    $('#header-right').toggleClass('show');
+  });
+  $('[data-id=header-right-close]').click(function (e) {
+    e.preventDefault();
+    $('#header-right').removeClass('show');
+  });
+});
+
 
 
 
@@ -20,10 +31,10 @@ var mySwiperHome = new Swiper('#home-gallery', {
     nextEl: '#home-gallery-next',
     prevEl: '#home-gallery-prev',
   },
-  pagination: {
-    el: '#home-gallery-pagination',
-    clickable: true
-  },
+  // pagination: {
+  //   el: '#home-gallery-pagination',
+  //   clickable: true
+  // },
   slidesPerView: 'auto'
 });
 
@@ -34,10 +45,6 @@ var mySwiperProduct = new Swiper('#product-gallery', {
   navigation: {
     nextEl: '#product-gallery-next',
     prevEl: '#product-gallery-prev',
-  },
-  pagination: {
-    el: '#product-gallery-pagination',
-    clickable: true
   }
 });
 

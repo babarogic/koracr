@@ -5,28 +5,28 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@at-root {
-  @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
-}
+// @at-root {
+//   @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+// }
 
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-}
+// html {
+//   box-sizing: border-box;
+//   -ms-overflow-style: scrollbar;
+// }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
-@import "functions";
-@import "variables";
+// @import "functions";
+// @import "variables";
 
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
+// @import "mixins/breakpoints";
+// @import "mixins/grid-framework";
+// @import "mixins/grid";
 
-@import "grid";
-@import "utilities/display";
-@import "utilities/flex";
+// @import "grid";
+// @import "utilities/display";
+// @import "utilities/flex";

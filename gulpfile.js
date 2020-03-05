@@ -25,7 +25,10 @@ gulp.task('compile-html', function () {
       layouts: 'src/layouts/',
       partials: 'src/components/',
       helpers: 'src/html/',
-      data: 'src/data/'
+      data: 'src/data/',
+      pageLayouts: {
+        'proizvodi': 'proizvodi'
+      }
     }))
     .pipe(gulp.dest('build'));
 })
@@ -44,7 +47,7 @@ gulp.task('resetPages', (done) => {
 
 gulp.task('watch', () => {
   gulp.watch(['src/*.pug', 'src/**/*.pug'], ['pug']);
-  gulp.watch(['src/styles/*.scss', 'src/styles/bootstrap/*.scss'], ['sass']);
+  gulp.watch(['src/styles/*.scss', 'src/styles/bootstrap/*.scss', 'src/styles/components/*.scss'], ['sass']);
   gulp.watch(['src/**/*.html'], ['resetPages', 'compile-html']);
   // gulp.watch(['build/**/*'], ['copy']);
 });

@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo:400,700,900&display=swap');
 @import 'bootstrap/bootstrap';
+
+
+@import 'components/home-hero';
+@import 'components/home-about';
+@import 'components/home-products';
+@import 'components/home-technology';
+@import 'components/products';
+@import 'components/about';
+@import 'components/contact';
 
 
 .section-break {
@@ -13,10 +23,44 @@
   padding: 0;
   margin: 0;
   width: 100%;
+
+  .navbar {
+    z-index: 1;
+  }
 }
 
-//---- POCETNA
+.container-fluid {
+  padding-left: 40px * 2;
+  padding-right: 40px * 2;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: #ECB009;
+}
+
 //// Header Nav
+.navbar {
+  position: absolute !important;
+  width: 100% !important;
+  padding: 1.5rem;
+
+  @include media-breakpoint-down(sm) {
+    width: 100% !important;
+  }
+}
+
 .navbar-up .nav-products {
   @include media-breakpoint-down('md') {
     padding-bottom: 1rem !important;
@@ -29,11 +73,23 @@
   line-height: 1.25;
 }
 
+.menu-burger {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mobile-menu {
+  display: grid;
+}
+
 #header .navbar-nav {
   flex-direction: row;
 
+  .btn-dark {
+    border-radius: 6px !important;
+  }
+
   .nav-item {
-    font-weight: bold;
 
     &:nth-child(-n+2) {
       padding-right: 1rem;
@@ -46,27 +102,37 @@
 }
 
 
-//// Hero Cover
-//// Company About
-//// Products
-//// Technology
-//// Footer
+//---- Elements
+//// Buttons
 
+.btn-primary {
+  color: $gray-900 !important;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: .6s all;
+  &:hover {
+    transform: translate(0, -6px);
+    transition: .6s all;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
 
+.divider {
+  height: 0.25rem;
+  width: 50%;
+  background-color: $yellow;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
-
-
-
-//---- O NAMA
-//// O Kompaniji
-//// Content
-//// Footer
-
-
-
-
-//---- Kontakt
-//// Cover
-//// Telephones
-//// Form
-//// Footer
+//---- Typography

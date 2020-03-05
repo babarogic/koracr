@@ -1,0 +1,83 @@
+
+#contact-hero .container-fluid .row {
+  height: 70vh;
+
+  @include media-breakpoint-down(md) {
+    height: 75vh;
+  }
+}
+
+#contact {
+  padding-top: 4rem;
+}
+
+.contact-cover-background {
+  height: 100vh;
+  max-height: 100%;
+  min-width: 300px;
+  background-image: url(/build/assets/pictures/contact-cover.jpg);
+  background-position: top;
+  background-size: cover;
+
+  @include media-breakpoint-down(sm) {
+    height: 85vh;
+  }
+}
+
+.contact-cover {
+  align-items: flex-end;
+  padding-top: 3.75rem;
+  padding-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 3.75rem;
+  }
+
+  p {
+    color: $gray-400;
+    letter-spacing: 1px;
+    max-width: 65ch;
+  }
+
+  h1, h4 {
+    color: white !important;
+  }
+
+  h2 {
+    color: $primary;
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+      max-width: 20ch;
+    }
+  }
+
+  .display-3 {
+    font-size: 5rem;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 4rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 10vw;
+    }
+  }
+}
+
+.contact-background {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 15vw 0 0 0;
+  margin: 0 0 -10vw;
+  transform: translateY(-12vw);
+  width: 100%;
+  background-color: transparent;
+  // background-image: url(/build/assets/elements/home-element.svg);
+  // background-repeat: no-repeat;
+  // background-size: 100% auto;
+  // background-position: top center;
+
+  @include media-breakpoint-down(sm) {
+    background-image: url(/build/assets/elements/mobile-home-element.svg);
+  }
+}

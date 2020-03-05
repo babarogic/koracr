@@ -21,7 +21,7 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body id="product-page">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5X9VJM"
@@ -31,23 +31,30 @@
   <div class="wrapper">
     		<!--HEADER-->
     		<header id="header" class="navbar navbar-expand-xs">
-    			<div class="col-4">
-    				<a href="../index.html" class="text-dark">
-    					<h2 class="m-0 p-0">KoracR</h2>
+    			<div class="col pl-0 ml-0">
+    				<a href="../index.html" class="">
+    					<h2 class="m-0 p-0 text-dark">KoraćR</h2>
     				</a>
     			</div>
-    			<div class="col col-lg-4 px-0">
+    			<div class="menu-burger col d-none d-sm-block">
     				<div class="nav-item text-right text-lg-center">
     					<a class="navbar-toggler pl-0" href="" data-id="header-up-toggle">
-    						<img src="../assets/glyphs/burger.svg" /></a>
+    						<img src="../assets/glyphs/burger-dark.svg" /></a>
     				</div>
     			</div>
     
-    			<div class="col-4 d-none d-lg-flex justify-content-end align-items-center weight-500 d-none d-lg-block">
+    			<div class="menu-burger col d-sm-none">
+    				<div class="nav-item text-right text-lg-center">
+    					<a class="navbar-toggler pl-0" href="" data-id="header-right-toggle">
+    						<img src="../assets/glyphs/burger-dark.svg" /></a>
+    				</div>
+    			</div>
+    
+    			<div class="col-lg-4 justify-content-end align-items-center weight-500 d-none d-lg-flex">
     				<div class="navbar-nav flex-row">
     					<div class="nav-item"><a class="nav-link text-dark" href="../onama.html">O nama</a></div>
     					<div class="nav-item dropdown">
-    						<a class="nav-link text-dark dropdown-toggle" href="../proizvodi.html" id="proizvodi-dropdown"
+    						<a class="nav-link dropdown-toggle text-dark" href="../proizvodi.html" id="proizvodi-dropdown"
     							data-toggle="dropdown">Proizvodi</a>
     						<div class="dropdown-menu" aria-labelledby="proizvodi-dropdown">
     							<a class="dropdown-item" href="">Action 1</a>
@@ -55,18 +62,18 @@
     							<a class="dropdown-item" href="">Action 3</a>
     						</div>
     					</div>
-    					<div class="nav-item"><a class="nav-link text-dark" href="../kontakt.html">Kontakt</a></div>
+    					<div class="nav-item"><a class="btn btn-dark mt-0 px-2" href="../kontakt.html">📞 Kontaktirajte nas</a></div>
     				</div>
     			</div>
     		</header>
     
-    		<div class="navbar-up" id="header-up" data-id="header-up-close">
+    		<div class="navbar-up d-none d-sm-block" id="header-up" data-id="header-up-close">
     			<div class="navbar navbar-up-content navbar-expand-xs">
     				<div class="col-4">
-    					<h2 class="m-0 p-0">KoracR</h2>
+    					<h2 class="m-0 p-0">KoraćR</h2>
     				</div>
     				<div class="col col-lg-4">
-    					<div class="nav-item text-right text-md-center">
+    					<div class="nav-item text-right text-lg-center">
     						<a class="navbar-up-close" href="" data-id="header-up-close">
     							<img src="../assets/glyphs/close.svg" width="24" />
     						</a>
@@ -77,132 +84,202 @@
     						+381 65 3899 700</a>
     				</div>
     				<hr class="w-100">
-    				<div class="container-fluid p-2 p-md-4">
+    				<div class="container-fluid p-md-0 p-lg-4">
     					<div class="col-12 col-md-6 nav-products">
-    						<h4 class="font-weight-bold">Proizvodi</h4>
-    						<div class="row justify-content-start">
-    							<div class="col-12 col-md-5">
-    								<ul class="nav flex-column">
-    									<li class="nav-item">
-    										<a class="nav-link active" href="../">Štampane selotep trake</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Selotep trake</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Papirna traka</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Krep trake</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Obostrano lepljive trake</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Trake za obelezavanje</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Protiv klizne trake</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Duct tape</a>
-    									</li>
-    								</ul>
-    							</div>
-    							<div class="col-12 col-md-5">
-    								<ul class="nav flex-column">
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Trake za teske terete</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Aluminijumske trake</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Stampana folija</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Strec folija</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Flic podloske</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Trake za nastavljanje</a>
-    									</li>
-    									<li class="nav-item">
-    										<a class="nav-link" href="../">Dispenzeri</a>
-    									</li>
-    								</ul>
+    						<div class="media">
+    							<img src="../assets/glyphs/products.svg" class="mr-3" alt="...">
+    							<div class="media-body">
+    								<h3 class="font-weight-bold">Proizvodi</h3>
+    								<div class="row justify-content-start">
+    									<div class="col-12 col-md-5">
+    										<ul class="nav flex-column">
+    											<li class="nav-item">
+    												<a class="nav-link active" href="../">Štampane selotep trake</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Selotep trake</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Papirna traka</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Krep trake</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Obostrano lepljive trake</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Trake za obelezavanje</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Protiv klizne trake</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Duct tape</a>
+    											</li>
+    										</ul>
+    									</div>
+    									<div class="col-12 col-md-5">
+    										<ul class="nav flex-column">
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Trake za teske terete</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Aluminijumske trake</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Stampana folija</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Strec folija</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Flic podloske</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Trake za nastavljanje</a>
+    											</li>
+    											<li class="nav-item">
+    												<a class="nav-link" href="../">Dispenzeri</a>
+    											</li>
+    										</ul>
+    									</div>
+    								</div>
     							</div>
     						</div>
     					</div>
     					<div class="col-12 col-md-3 nav-products">
-    						<h4 class="font-weight-bold">O nama</h4>
-    						<ul class="nav flex-column">
-    							<li class="nav-item">
-    								<a class="nav-link active" href="../">Rad u kompaniji</a>
-    							</li>
-    							<li class="nav-item">
-    								<a class="nav-link" href="../">Tehnologija</a>
-    							</li>
-    						</ul>
+    
+    						<div class="media">
+    							<img src="../assets/glyphs/about.svg" class="mr-3" alt="...">
+    							<div class="media-body">
+    								<h3 class="font-weight-bold">O nama</h3>
+    								<ul class="nav flex-column">
+    									<li class="nav-item">
+    										<a class="nav-link" href="../">Rad u kompaniji</a>
+    									</li>
+    									<li class="nav-item">
+    										<a class="nav-link" href="../">Tehnologija</a>
+    									</li>
+    								</ul>
+    							</div>
+    						</div>
+    
     					</div>
     					<div class="col-12 col-md-3 nav-products">
-    						<h4 class="font-weight-bold">Kontakt</h4>
-    						<ul class="nav flex-column">
-    							<li class="nav-item">
-    								<a class="nav-link active" href="../">Kako do nas</a>
-    							</li>
-    							<li class="nav-item">
-    								<a class="nav-link" href="../">Kontakt forma</a>
-    							</li>
-    						</ul>
+    
+    						<div class="media">
+    							<img src="../assets/glyphs/contact.svg" class="mr-3" alt="...">
+    							<div class="media-body">
+    								<h3 class="font-weight-bold">Kontakt</h3>
+    								<ul class="nav flex-column">
+    									<li class="nav-item">
+    										<a class="nav-link active" href="../">Kako do nas</a>
+    									</li>
+    									<li class="nav-item">
+    										<a class="nav-link" href="../">Kontaktirajte nas</a>
+    									</li>
+    								</ul>
+    							</div>
+    						</div>
+    
     					</div>
     				</div>
     			</div>
     		</div>
+    
+    		<div class="navbar-right d-sm-none" id="header-right" data-id="header-right-close">
+    			<div class="navbar-right-content d-flex flex-column justify-content-between">
+    				<div class="mobile-menu"><a class="navbar-right-close mb-4" href="" data-id="header-right-close"><img src="./assets/glyphs/close.svg" width="32" /></a>
+    					<div class="navbar-nav">
+    						<div class="nav-item"><a class="nav-link text-dark" href="">First</a></div>
+    						<div class="nav-item"><a class="nav-link text-dark" href="">Second</a></div>
+    						<div class="nav-item"><a class="nav-link text-dark" href="">Third</a></div>
+    						<div class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle" href="" id="headers-1-dropdown" data-toggle="dropdown">Fourth</a>
+    							<div class="dropdown-menu" aria-labelledby="headers-1-dropdown"><a class="dropdown-item" href="">Action 1</a><a class="dropdown-item" href="">Action 2</a><a class="dropdown-item" href="">Action 3</a></div>
+    						</div>
+    						<div class="nav-item"><a class="nav-link text-dark" href="">Fifth</a></div>
+    						<div class="nav-item"><a class="nav-link text-dark" href="">Sixth</a></div>
+    					</div>
+    				</div>
+    				<div>
+    					<p class="mb-3"><a class="transparent-invert-link" href=""><img src="./assets/glyphs/instagram-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/facebook-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/twitter-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/pinterest-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/thumbler-small.svg" width="16" /></a></p>
+    					<p class="small mb-0"><span class="d-block d-xl-inline text-muted mb-1 mb-xl-0 mr-2">&copy; 2019 Acme. All right reserved.</span><a class="text-muted mr-2" href=""><span>Privacy Policy</span></a><a class="text-muted" href=""><span>Terms of Service</span></a></p>
+    				</div>
+    			</div>
+    			<div class="navbar-right-content weight-700"><a class="navbar-right-close mb-4" href="" data-id="headers-2-sidebar-close"><img src="./assets/glyphs/close.svg" width="32" /></a></div>
+    		</div>
     		<!--HEADER - end-->
-    <section class="container-fluid">
-      <div class="row justify-content-between align-items-center py-5">
-        <div class="col-12 col-md-5 order-2 order-md-1">
-          <h1 class="display-4">Solventne selotejp trake</h1>
-          <p class="mb-4">Štampana samolepljiva traka Solvent se koristi za lepljenje lakih i srednje teških paketa.</p>
-          <div class="row">
-            <div class="col-6">
-              <h4>Braon boja</h4>
-              <div class="small">Gorgeous, high-quality video sharing on desktop, mobile, tablet</div>
+    <section id="product" class="product-cover-background">
+      <div class="container-fluid">
+        <div class="product-cover row">
+          <div class="col-12 col-md-5 order-2 order-md-1">
+            <h1 class="display-4">Solventne selotejp trake</h1>
+            <p class="mb-4">Štampana samolepljiva traka Solvent se koristi za lepljenje lakih i srednje teških paketa.</p>
+            <div class="row">
+              <div class="col-6">
+                <div class="media">
+                  <img src="../assets/elements/crvena.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h4 class="m-0">Crvena boja</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="media">
+                  <img src="../assets/elements/braon.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h4 class="m-0">Braon boja</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="divider-thin"></div>
             </div>
-            <div class="col-6">
-              <h4>Crvena boja</h4>
-              <div class="small">Gorgeous, high-quality video sharing on desktop, mobile, tablet</div>
+          </div>
+          <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">
+            <div class="swiper">
+              <div class="swiper-container" id="product-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
+                  </div>
+                  <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
+                  </div>
+                  <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" id="product-gallery-prev" href="">
+                <div class="carousel-control-prev-icon"></div>
+              </a>
+              <a class="carousel-control-next" id="product-gallery-next" href="">
+                <div class="carousel-control-next-icon"></div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">
-          <div class="swiper has-outside-pagination">
-            <div class="swiper-container" id="product-gallery">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
-                </div>
-                <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
-                </div>
-                <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination swiper-pagination-outside" id="product-gallery-pagination"></div>
-            <a class="carousel-control-prev" id="product-gallery-prev" href="">
-              <div class="carousel-control-prev-icon"></div>
-            </a>
-            <a class="carousel-control-next" id="product-gallery-next" href="">
-              <div class="carousel-control-next-icon"></div>
-            </a>
+      </div>
+      <div class="container-fluid pb-5">
+        <div class="row py-5">
+          <div class="benefit benefit-box col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Dobro prijanjanje za površinu i lepljivost</h4>
+          </div>
+          <div class="benefit benefit-box col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Otpornost na starenje</h4>
+          </div>
+          <div class="benefit benefit-box col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Otpornost na UV zračenja</h4>
+          </div>
+          <div class="benefit benefit-box col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Lako rukovanje sa trakom</h4>
+          </div>
+          <div class="benefit benefit-box col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Primenljiva na većinu površina</h4>
           </div>
         </div>
       </div>
     </section>
     
-    <section class="container-fluid">
+    <!-- <section id="benefits" class="container-fluid">
       <div class="row py-5">
         <div class="col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/rectangle-2.svg" width="32" />
           <h4>Feature one</h4>
@@ -225,7 +302,7 @@
           <div class="small">Gorgeous, high-quality video sharing on desktop, mobile, tablet or more</div>
         </div>
       </div>
-    </section>
+    </section> -->
     
     <section class="container-fluid">
       <div class="row justify-content-center pt-5">
@@ -372,7 +449,7 @@
     			<div class="row align-items-center py-4">
     				<div class="col-12 col-lg-2 text-center text-lg-left">
     					<a href="../index.html" class="text-dark">
-    						<h2 class="m-0 p-0">KoracR</h2>
+    						<h2 class="m-0 p-0">KoraćR</h2>
     					</a>
     				</div>
     				<div class="col-12 col-lg-8 navbar-expand text-center weight-500">
