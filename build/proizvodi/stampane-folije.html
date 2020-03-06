@@ -32,7 +32,7 @@
     		<!--HEADER-->
     		<header id="header" class="navbar navbar-expand-xs">
     			<div class="col pl-0 ml-0">
-    				<a href="../index.html" class="">
+    				<a href="../" class="">
     					<h2 class="m-0 p-0 text-dark">KoraćR</h2>
     				</a>
     			</div>
@@ -52,7 +52,7 @@
     
     			<div class="col-lg-4 justify-content-end align-items-center weight-500 d-none d-lg-flex">
     				<div class="navbar-nav flex-row">
-    					<div class="nav-item"><a class="nav-link text-dark" href="../onama.html">O nama</a></div>
+    					<div class="nav-item"><a class="nav-link text-dark" href="../onama/">O nama</a></div>
     					<div class="nav-item dropdown">
     						<a class="nav-link dropdown-toggle text-dark" href="../proizvodi.html" id="proizvodi-dropdown"
     							data-toggle="dropdown">Proizvodi</a>
@@ -62,7 +62,7 @@
     							<a class="dropdown-item" href="">Action 3</a>
     						</div>
     					</div>
-    					<div class="nav-item"><a class="btn btn-dark mt-0 px-2" href="../kontakt.html">📞 Kontaktirajte nas</a></div>
+    					<div class="nav-item"><a class="btn btn-dark mt-0 px-2" href="../kontakt/">📞 Kontaktirajte nas</a></div>
     				</div>
     			</div>
     		</header>
@@ -89,7 +89,7 @@
     						<div class="media">
     							<img src="../assets/glyphs/products.svg" class="mr-3" alt="...">
     							<div class="media-body">
-    								<h3 class="font-weight-bold">Proizvodi</h3>
+    								<p class="font-weight-bold h3">Proizvodi</p>
     								<div class="row justify-content-start">
     									<div class="col-12 col-md-5">
     										<ul class="nav flex-column">
@@ -153,7 +153,7 @@
     						<div class="media">
     							<img src="../assets/glyphs/about.svg" class="mr-3" alt="...">
     							<div class="media-body">
-    								<h3 class="font-weight-bold">O nama</h3>
+    								<p class="font-weight-bold h3">O nama</p>
     								<ul class="nav flex-column">
     									<li class="nav-item">
     										<a class="nav-link" href="../">Rad u kompaniji</a>
@@ -171,7 +171,7 @@
     						<div class="media">
     							<img src="../assets/glyphs/contact.svg" class="mr-3" alt="...">
     							<div class="media-body">
-    								<h3 class="font-weight-bold">Kontakt</h3>
+    								<p class="font-weight-bold h3">Kontakt</p>
     								<ul class="nav flex-column">
     									<li class="nav-item">
     										<a class="nav-link active" href="../">Kako do nas</a>
@@ -210,241 +210,189 @@
     			<div class="navbar-right-content weight-700"><a class="navbar-right-close mb-4" href="" data-id="headers-2-sidebar-close"><img src="./assets/glyphs/close.svg" width="32" /></a></div>
     		</div>
     		<!--HEADER - end-->
-    <section class="container-fluid">
-    	<div class="row justify-content-between align-items-center py-5">
-    		<div class="col-12 col-md-5 order-2 order-md-1">
-    			<h1 class="display-4">Štampane folije</h1>
-    			<p class="mb-4">Trake za upozorenje se izradjuju po standardu u širini od 100mm ili po zahtevu kupca i u raznim
-    				debljinama folije isto tako po zahtevu kupca.
-    			
-    			</p>
-    
-    			<div class="row">
-    				<!--
-            <div class="col-4">
-              <h4>Transparentna</h4>
-              <div class="small">Gorgeous, high-quality video sharing on desktop, mobile, tablet</div>
+    <section id="product" class="product-cover-background">
+      <div class="container-fluid">
+        <div class="product-cover row">
+          <div class="col-12 col-md-5 order-2 order-md-1">
+            <h1 class="display-4">Solventne selotejp trake</h1>
+            <p class="mb-4">Štampana samolepljiva traka Solvent se koristi za lepljenje lakih i srednje teških paketa.</p>
+            <div class="row">
+              <div class="col-6">
+                <div class="media">
+                  <img src="../assets/elements/crvena.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h4 class="m-0">Crvena boja</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="media">
+                  <img src="../assets/elements/braon.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h4 class="m-0">Braon boja</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="divider-thin"></div>
             </div>
-            <div class="col-4">
-              <h4>Bele boje</h4>
-              <div class="small">Gorgeous, high-quality video sharing on desktop, mobile, tablet</div>
-    				</div>
-    				<div class="col-4">
-              <h4>Braon boje</h4>
-              <div class="small">Gorgeous, high-quality video sharing on desktop, mobile, tablet</div>
+    			</div>
+    
+          <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">
+            <div class="swiper">
+              <div class="swiper-container" id="product-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
+                  </div>
+                  <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
+                  </div>
+                  <div class="swiper-slide"><img class="w-100" src="../assets/pictures/image-555x380.png" />
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" id="product-gallery-prev" href="">
+                <div class="carousel-control-prev-icon"></div>
+              </a>
+              <a class="carousel-control-next" id="product-gallery-next" href="">
+                <div class="carousel-control-next-icon"></div>
+              </a>
             </div>
-          -->
-    			</div>
-    		</div>
-    		<div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">
-    			<div class="swiper has-outside-pagination">
-    				<div class="swiper-container" id="product-gallery">
-    					<div class="swiper-wrapper">
-    						<div class="swiper-slide"><img class="w-100"
-    								src="../assets/pictures/proizvodi/stampane-folije/stampane-folije-1.jpg" />
-    						</div>
+          </div>
+        </div>
+    	</div>
     
-    					
     
-    					</div>
+      <div class="container-fluid pb-5">
+        <div class="row py-5">
+    			<div class="benefit-box col-12 col-md mb-4 mb-md-0">
+    				<div class="benefit-box--container">
+    					<img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Dobro prijanjanje za površinu i lepljivost</h4>
     				</div>
-    				<div class="swiper-pagination swiper-pagination-outside" id="product-gallery-pagination"></div>
-    				<a class="carousel-control-prev" id="product-gallery-prev" href="">
-    					<div class="carousel-control-prev-icon"></div>
-    				</a>
-    				<a class="carousel-control-next" id="product-gallery-next" href="">
-    					<div class="carousel-control-next-icon"></div>
-    				</a>
     			</div>
-    		</div>
-    	</div>
-    </section>
-    
-    <section class="container-fluid">
-    	<div class="row py-5">
-    		<div class="col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/rectangle-2.svg" width="32" />
-    			<h4></h4>
-    			<div class="small">NEMA</div>
-    		</div>
-    		<div class="col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/rectangle-6.svg" width="32" />
-    			<h4></h4>
-    			<div class="small">NEMA</div>
-    		</div>
-    		<div class="col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/rectangle-3.svg" width="32" />
-    			<h4></h4>
-    			<div class="small">NEMA</div>
-    		</div>
-    		<div class="col-12 col-md mb-4 mb-md-0"><img class="mb-2" src="../assets/glyphs/rectangle-5.svg" width="32" />
-    			<h4></h4>
-    			<div class="small">NEMA</div>
-    		</div>
-    	</div>
-    </section>
-    
-    <section class="container-fluid">
-    	<div class="row justify-content-center pt-3">
-    		<div class="col-12 col-md-8 col-lg-6">
-    			<h1>O proizvodu</h1>
-    			<p>Namena</p>
-    			<div class="border-bottom pb-4">
-    
-    					<ul class="mb-0">
-    					<li>Za obeležavanje podzemnih kablova</li>
-    					<li>Za obeležavanje gradilišta</li>
-    					<li>Za obeležavanje radova</li>
-    					<li>Za ogradjivanje ringova na izložbama</li>
-    				</ul>
-    			
+    			<div class="benefit-box col-12 col-md mb-4 mb-md-0">
+    				<div class="benefit-box--container">
+    					<img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Otpornost na starenje</h4>
+    				</div>
     			</div>
-    			<br>
-    
-    
-    			<p><strong>Napomena:</strong> Izrada po željenim dimenzijama.</p>
-    			<!--
-    			<p><strong>Savet:</strong> Preporuka je da se traka primenjuje na suvu, glatku i očišćenu od prašine površinu, na
-    				umerenim temperaturama (oko 20°C), kako bi efekat lepljenja bio najefikasniji. Dovoljan je lagan pritisak na
-    				traku, kako bi se zalepila na površinu na koju se lepi.</p>
-    			-->
-    
-    		</div>
-    	</div>
+    			<div class="benefit-box col-12 col-md mb-4 mb-md-0">
+    				<div class="benefit-box--container">
+    					<img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Otpornost na UV zračenja</h4>
+    				</div>
+    			</div>
+    			<div class="benefit-box col-12 col-md mb-4 mb-md-0">
+    				<div class="benefit-box--container">
+    					<img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Lako rukovanje sa trakom</h4>
+    				</div>
+    			</div>
+    			<div class="benefit-box col-12 col-md mb-4 mb-md-0">
+    				<div class="benefit-box--container">
+    					<img class="mb-2" src="../assets/glyphs/benefits/quality.svg" />
+            <h4>Primenljiva na većinu površina</h4>
+    				</div>
+    			</div>
+        </div>
+      </div>
     </section>
     
     
     <section class="container-fluid">
-    	<div class="row justify-content-center pt-4">
-    		<div class="col-12 col-md-8 col-lg-6 d-block">
-    			<h2>Tehničke specifikacije</h2>
-    			<!--
-            <p>By creating an Account on our service, you agree to subscribe to newsletters, marketing or
-    				promotional
-            materials and other information we may send.</p>
-           -->
-    		</div>
-    	</div>
-    	<div class="row justify-content-center py-3">
-    		<div class="col-12 col-md-8 col-lg-6 d-block">
-    			<table class="table table-striped">
-    				<thead>
-    					<tr>
-    						<th scope="col"></th>
-    						<th scope="col">Svojstvo</th>
-    						<th scope="col">Opis</th>
+      <div class="row justify-content-center pt-5">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h1>O proizvodu</h1>
+          <div class="border-bottom pb-4">
+            <p class="mb-0">Reklama na selotejp traci je uzela maha u svim granama privrede gde se može iskoristiti
+              njena efikasnost. Ove trake za pakovanje, lepljenje, oblepljivanje i obeležavanje kutija se primenjuje u
+              prehrambenoj (hladnjače od 70 do -50 c), štamparskoj ili keramičkoj industriji. Industrija stakla takodje
+              koristi ove lepljive trake, bilo da su u pitanju staklorezačke radnje ili auto industrija. Pomoći ćemo Vam
+              da izaberete traku koja najviše odgovara Vašim potrebama i zahtevima posla.
     
-    					</tr>
-    				</thead>
-    				<tbody>
+              Osim što je izuzetno praktičan, ovaj način pakovanja obezbedjuje i značajnu uštedu na reklami,
+              skladištenju i zaštiti proizvoda. Namenjene su lakim i srednje teškim paketima gde daju maksimalnu potporu
+              sadržaju.
     
+              Štampa na selotejp trakama podrazumeva štampanje logoa, crteža, teksta ili imena Vaše firme na
+              samolepljivu traku izuzetne otpornosti i funkcionalnosti. Ovo je profitabilan način reklamiranja, jer
+              štedite na sredstvima koja biste uložili na štampanje kutija. Takođe, tokom prevoženja materijala i robe,
+              ime i logo na traci će biti vidno istaknuti.
     
-    					<!--
-    					<tr>
-    						<th scope="row">1</th>
-    						<td>Backing (podrška/potpora)</td>
-    						<td>0.025mm tvrdo-meka aluminijumska folija</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">2</th>
-    						<td>Lepak</td>
-    						<td>Akril</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">3</th>
-    						<td>Opna</td>
-    						<td>Jednostrani silikonski beli polietilenski film</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">4</th>
-    						<td>Ukupna debljina (bez opne)</td>
-    						<td>0,053mm</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">5</th>
-    						<td>Lepljivost prema čeliku</td>
-    						<td>6,25N/25mm</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">6</th>
-    						<td>Snaga istezljivosti MD</td>
-    						<td>38N/25mm</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">7</th>
-    						<td>Izduženje pri prekidu</td>
-    						<td>4%</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">8</th>
-    						<td>Temparaturna otpornost</td>
-    						<td>100°C (kratak period)</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">9</th>
-    						<td>Širina trake</td>
-    						<td>50mm</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">10</th>
-    						<td>Dužina trake</td>
-    						<td>50m</td>
-    					</tr>
-    
-    					<tr>
-    						<th scope="row">11</th>
-    						<td>Boja</td>
-    						<td>Srebrna</td>
-    					</tr>
-    
-    				-->
-    
-    
-    				</tbody>
-    			</table>
-    		</div>
-    	</div>
+              Samolepljive štampane trake poslužiće i za obeležavanje pakovanja čime ćete sebi olakšati posao
+              razvrstavanja paketa i uštedeti vreme.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     
-    <div class="swiper swiper-overflow py-5">
-    	<div class="container position-relative">
-    		<div class="swiper-container row" id="productTwo-gallery">
-    			<div class="swiper-wrapper">
     
-    				<div class="swiper-slide">
-    					<div class="col-12">
-    						<div class="images-ratio ratio-2-1"
-    							style="background-image: url(../assets/pictures/proizvodi/stampane-folije/aplikacija/stampane-folije-1.jpg)">
-    						</div>
-    					</div>
-    				</div>
-    
-    				<div class="swiper-slide">
-    					<div class="col-12">
-    						<div class="images-ratio ratio-2-1"
-    							style="background-image: url(../assets/pictures/proizvodi/stampane-folije/aplikacija/stampane-folije-2.jpg)">
-    						</div>
-    					</div>
-    				</div>
-    
-    			
-    
-    
-    
-    			</div>
-    		</div><a class="carousel-control-prev carousel-control-outside" id="productTwo-gallery-prev" href="">
-    			<div class="carousel-control-prev-icon"></div>
-    		</a><a class="carousel-control-next carousel-control-outside" id="productTwo-gallery-next" href="">
-    			<div class="carousel-control-next-icon"></div>
-    		</a>
-    	</div>
+    <div class="swiper swiper-overflow py-5 bg-dark">
+      <div class="container position-relative">
+        <div class="swiper-container row" id="productTwo-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="col-12">
+                <div class="images-ratio ratio-2-1"
+                  style="background-image: url(../assets/pictures/image-1110x540.png)">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-12">
+                <div class="images-ratio ratio-2-1"
+                  style="background-image: url(../assets/pictures/image-1110x540.png)">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-12">
+                <div class="images-ratio ratio-2-1"
+                  style="background-image: url(../assets/pictures/image-1110x540.png)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><a class="carousel-control-prev carousel-control-outside" id="productTwo-gallery-prev" href="">
+          <div class="carousel-control-prev-icon"></div>
+        </a><a class="carousel-control-next carousel-control-outside" id="productTwo-gallery-next" href="">
+          <div class="carousel-control-next-icon"></div>
+        </a>
+      </div>
     </div>
+    
+    <section class="container-fluid">
+      <div class="row text-center flex-md-nowrap py-md-5">
+        <div class="col-12 col-md-6">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="py-5 py-md-0">
+                <h3>Medium length headline</h3>
+                <p>Change the color to match your brand or vision, add your logo, choose the perfect
+                  thumbnail,
+                  remove the playbar</p><a class="weight-500 action-link" href=""><span>Read
+                    more</span></a>
+              </div>
+              <div class="border-bottom d-md-none"></div>
+            </div>
+          </div>
+        </div>
+        <div class="border-right d-none d-md-block"></div>
+        <div class="col-12 col-md-6">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="py-5 py-md-0">
+                <h3>Medium length headline</h3>
+                <p>Change the color to match your brand or vision, add your logo, choose the perfect
+                  thumbnail,
+                  remove the playbar</p><a class="weight-500 action-link" href=""><span>Read
+                    more</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     		<!-- FOOTER -->
     		<footer id="footer" class="container-fluid">

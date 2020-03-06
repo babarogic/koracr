@@ -27,7 +27,8 @@ gulp.task('compile-html', function () {
       helpers: 'src/html/',
       data: 'src/data/',
       pageLayouts: {
-        'proizvodi': 'proizvodi'
+        'proizvodi': 'proizvodi',
+        'kontakt': 'kontakt'
       }
     }))
     .pipe(gulp.dest('build'));
