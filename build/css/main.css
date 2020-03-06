@@ -6957,7 +6957,8 @@ a.text-white:hover, a.text-white:focus {
   padding: 2rem 1rem;
   box-shadow: 0 1.3px 1.3px rgba(0, 0, 0, 0.043), 0 5.7px 5.2px rgba(0, 0, 0, 0.058), 0 11px 16px rgba(0, 0, 0, 0.09); }
   .benefit-box--container h4 {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    font-weight: 600; }
 
 #about-hero .container-fluid .row {
   height: 80vh; }
