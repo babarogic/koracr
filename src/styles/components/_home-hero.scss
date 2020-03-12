@@ -15,6 +15,10 @@
   background-size: cover;
 
   @include media-breakpoint-down(sm) {
+    height: 80vw !important;
+  }
+
+  @include media-breakpoint-down(md) {
     height: 75vw;
   }
 }
