@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;GAKG",
+    "sources": [
+        "../../src/styles/bootstrap/bootstrap-grid.scss"
+    ],
+    "names": [],
+    "file": "bootstrap-grid.css"
+}
