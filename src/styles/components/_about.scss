@@ -11,7 +11,7 @@
   height: 100vh;
   max-height: 100%;
   min-width: 300px;
-  background-image: url(/build/assets/pictures/about-cover.jpg);
+  background-image: url(../assets/pictures/about-cover.jpg);
   background-position: top;
   background-size: cover;
 
@@ -73,13 +73,13 @@
   transform: translateY(-12vw);
   width: 100%;
   background-color: transparent;
-  background-image: url(/build/assets/elements/about-element.svg);
+  background-image: url(../assets/elements/about-element.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
 
   @include media-breakpoint-down(sm) {
-    background-image: url(/build/assets/elements/mobile-home-element.svg);
+    background-image: url(../assets/elements/mobile-home-element.svg);
   }
 
   .about-text {
