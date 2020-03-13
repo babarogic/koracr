@@ -1,6 +1,7 @@
 //// Products
 
 .home-product-title {
+  z-index: 1;
   position: absolute;
   bottom: 0;
   background-color: white;
@@ -16,7 +17,7 @@
     0 28.6px 25.9px -6px rgba(0, 0, 0, 0.053),
     0 53px 62px -6px rgba(0, 0, 0, 0.037);
   transform: translate(-5px, 5px);
-  transition: 250ms all ease-in;
+  transition: 150ms all ease-in;
 
   &:hover {
     transform: translate(-12px, 12px);
@@ -24,7 +25,7 @@
       0 2.2px 4.5px 0px rgba(0, 0, 0, 0.07),
       0 8.2px 15.2px 0px rgba(0, 0, 0, 0.009),
       0 55px 68px 0px rgba(0, 0, 0, -0.005);
-    transition: 250ms all ease-in;
+    transition: 150ms all ease-in;
   }
 
   h3 {
