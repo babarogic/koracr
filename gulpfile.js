@@ -40,17 +40,17 @@ gulp.task('resetPages', (done) => {
   console.log('Clearing panini cache');
 });
 
-// gulp.task('copy', function () {
+gulp.task('copy', function () {
 
-//   gulp.src('build/**/*')
-//     .pipe(gulp.dest('./docs/'));
-// });
+  gulp.src('build/**/*')
+    .pipe(gulp.dest('./docs/'));
+});
 
 gulp.task('watch', () => {
   gulp.watch(['src/*.pug', 'src/**/*.pug'], ['pug']);
   gulp.watch(['src/styles/*.scss', 'src/styles/bootstrap/*.scss', 'src/styles/components/*.scss'], ['sass']);
   gulp.watch(['src/**/*.html'], ['resetPages', 'compile-html']);
-  // gulp.watch(['build/**/*'], ['copy']);
+  gulp.watch(['build/**/*'], ['copy']);
 });
 
 gulp.task('default', ['pug', 'sass', 'compile-html']);
