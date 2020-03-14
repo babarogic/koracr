@@ -2,28 +2,26 @@
 		<header id="header" class="navbar navbar-expand-xs">
 			<div class="col pl-0 ml-0">
 				<a href="{{root}}" class="">
-					<h2 class="m-0 p-0 text-white">KoraćR</h2>
+					<img src="{{root}}assets/logos/koracr.png" class="img-fluid" width="140px">
 				</a>
 			</div>
-			<div class="menu-burger col d-none d-sm-block">
-				<div class="nav-item text-right text-lg-center">
-					<a class="navbar-toggler pl-0" href="" data-id="header-up-toggle">
-						<img src="{{root}}assets/glyphs/burger.svg" /></a>
-				</div>
-			</div>
 
-			<div class="menu-burger col d-sm-none">
+
+			<div class="menu-burger col d-block d-lg-none">
 				<div class="nav-item text-right text-lg-center">
 					<a class="navbar-toggler pl-0" href="" data-id="header-right-toggle">
 						<img src="{{root}}assets/glyphs/burger.svg" /></a>
 				</div>
 			</div>
 
-			<div class="col-lg-4 justify-content-end align-items-center weight-700 d-none d-lg-flex">
+			<div class="col justify-content-end align-items-center weight-700 d-none d-lg-flex">
 				<div class="navbar-nav flex-row">
-					<div class="nav-item"><a class="nav-link text-white" href="{{root}}onama/">O nama</a></div>
 					<div class="nav-item"><a class="nav-link text-white" href="{{root}}proizvodi/">Proizvodi</a></div>
-					<div class="nav-item"><a class="btn btn-primary mt-0 px-2" href="{{root}}kontakt/">📞 Kontaktirajte nas</a>
+					<div class="nav-item"><a class="nav-link text-white" href="{{root}}onama/">O nama</a></div>
+					<div class="nav-item"><a class="btn btn-primary mt-0 px-2" href="{{root}}kontakt/">📞 Kontaktirajte nas</a></div>
+					<div class="nav-item text-right text-lg-center ml-4">
+						<a class="navbar-toggler pl-0" href="" data-id="header-up-toggle">
+							<img src="{{root}}assets/glyphs/burger.svg" /></a>
 					</div>
 				</div>
 			</div>
@@ -32,18 +30,18 @@
 		<div class="navbar-up d-none d-sm-block" id="header-up" data-id="header-up-close">
 			<div class="navbar navbar-up-content navbar-expand-xs">
 				<div class="col-4">
-					<p class="h2 m-0 p-0">KoraćR</p>
+					<img src="{{root}}assets/logos/koracr.png" class="img-fluid" width="140px">
+				</div>
+				<div class="col-4 text-center weight-500 d-none d-lg-block">
+					<a href="mailto:381650000000" class="text-dark"><img src="{{root}}assets/glyphs/phone.svg" width="16" />
+						+381 65 3899 700</a>
 				</div>
 				<div class="col col-lg-4">
-					<div class="nav-item text-right text-lg-center">
+					<div class="nav-item text-right">
 						<a class="navbar-up-close" href="" data-id="header-up-close">
 							<img src="{{root}}assets/glyphs/close.svg" width="24" />
 						</a>
 					</div>
-				</div>
-				<div class="col-4 text-right weight-500 d-none d-lg-block">
-					<a href="mailto:381650000000" class="text-dark"><img src="{{root}}assets/glyphs/phone.svg" width="16" />
-						+381 65 3899 700</a>
 				</div>
 				<hr class="w-100">
 				<div class="container-fluid p-md-0 p-lg-4">
@@ -51,7 +49,9 @@
 						<div class="media">
 							<img src="{{root}}assets/glyphs/products.svg" class="mr-3" alt="...">
 							<div class="media-body">
-								<p class="font-weight-bold h3">Proizvodi</p>
+								<a href="{{root}}onama/">
+									<p class="font-weight-bold h3">Proizvodi</p>
+								</a>
 								<div class="row justify-content-start">
 									<div class="col-12 col-md-5">
 										<ul class="nav flex-column">
@@ -115,14 +115,16 @@
 						<div class="media">
 							<img src="{{root}}assets/glyphs/about.svg" class="mr-3" alt="...">
 							<div class="media-body">
-								<p class="font-weight-bold h3">O nama</p>
+								<a href="{{root}}onama/">
+									<p class="font-weight-bold h3">O nama</p>
+								</a>
 								<ul class="nav flex-column">
-									<li class="nav-item">
+									<!-- <li class="nav-item">
 										<a class="nav-link" href="{{root}}">Rad u kompaniji</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="{{root}}">Tehnologija</a>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 						</div>
@@ -133,13 +135,18 @@
 						<div class="media">
 							<img src="{{root}}assets/glyphs/contact.svg" class="mr-3" alt="...">
 							<div class="media-body">
-								<p class="font-weight-bold h3">Kontakt</p>
+								<a href="{{root}}onama/">
+									<p class="font-weight-bold h3">Kontakt</p>
+								</a>
 								<ul class="nav flex-column">
 									<li class="nav-item">
-										<a class="nav-link active" href="{{root}}">Kako do nas</a>
+										<a class="nav-link active" href="{{root}}kontakt/index.html#map">Kako do nas</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="{{root}}">Kontaktirajte nas</a>
+										<a class="nav-link" href="{{root}}kontakt/index.html#callus">Pozovite nas</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{{root}}kontakt/index.html#contact">Pišite nam</a>
 									</li>
 								</ul>
 							</div>

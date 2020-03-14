@@ -1,29 +1,27 @@
 		<!--HEADER-->
 		<header id="header" class="navbar navbar-expand-xs">
-			<div class="col pl-0 ml-0">
+			<div class="col col-lg-2 pl-0 ml-0">
 				<a href="{{root}}" class="">
-					<h2 class="m-0 p-0 text-dark">KoraćR</h2>
+					<img src="{{root}}assets/logos/koracr.png" class="" width="140px">
 				</a>
 			</div>
-			<div class="menu-burger col d-none d-sm-block">
-				<div class="nav-item text-right text-lg-center">
-					<a class="navbar-toggler pl-0" href="" data-id="header-up-toggle">
-						<img src="{{root}}assets/glyphs/burger-dark.svg" /></a>
-				</div>
-			</div>
 
-			<div class="menu-burger col d-sm-none">
+			<div class="menu-burger col d-block d-lg-none">
 				<div class="nav-item text-right text-lg-center">
 					<a class="navbar-toggler pl-0" href="" data-id="header-right-toggle">
 						<img src="{{root}}assets/glyphs/burger-dark.svg" /></a>
 				</div>
 			</div>
 
-			<div class="col-lg-4 justify-content-end align-items-center weight-700 d-none d-lg-flex">
+			<div class="col justify-content-end align-items-center weight-700 d-none d-lg-flex">
 				<div class="navbar-nav flex-row">
-					<div class="nav-item"><a class="nav-link font-weight-bold text-dark" href="{{root}}onama/">O nama</a></div>
-					<div class="nav-item"><a class="nav-link font-weight-bold text-dark" href="{{root}}proizvodi/">Proizvodi</a></div>
+					<div class="nav-item"><a class="nav-link text-dark" href="{{root}}proizvodi/">Proizvodi</a></div>
+					<div class="nav-item"><a class="nav-link text-dark" href="{{root}}onama/">O nama</a></div>
 					<div class="nav-item"><a class="btn btn-dark mt-0 px-2" href="{{root}}kontakt/">📞 Kontaktirajte nas</a></div>
+					<div class="nav-item text-right text-lg-center ml-4">
+						<a class="navbar-toggler pl-0" href="" data-id="header-up-toggle">
+							<img src="{{root}}assets/glyphs/burger-dark.svg" /></a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -31,18 +29,18 @@
 		<div class="navbar-up d-none d-sm-block" id="header-up" data-id="header-up-close">
 			<div class="navbar navbar-up-content navbar-expand-xs">
 				<div class="col-4">
-					<p class="h2 m-0 p-0">KoraćR</p>
+					<img src="{{root}}assets/logos/koracr.png" class="img-fluid" width="140px">
+				</div>
+				<div class="col-4 text-center weight-500 d-none d-lg-block" style="align-self: center;">
+					<a href="mailto:381650000000" class="text-dark"><img src="{{root}}assets/glyphs/phone.svg" width="16" />
+						+381 65 3899 700</a>
 				</div>
 				<div class="col col-lg-4">
-					<div class="nav-item text-right text-lg-center">
+					<div class="nav-item text-right">
 						<a class="navbar-up-close" href="" data-id="header-up-close">
 							<img src="{{root}}assets/glyphs/close.svg" width="24" />
 						</a>
 					</div>
-				</div>
-				<div class="col-4 text-right weight-500 d-none d-lg-block">
-					<a href="mailto:381650000000" class="text-dark"><img src="{{root}}assets/glyphs/phone.svg" width="16" />
-						+381 65 3899 700</a>
 				</div>
 				<hr class="w-100">
 				<div class="container-fluid p-md-0 p-lg-4">
@@ -50,13 +48,14 @@
 						<div class="media">
 							<img src="{{root}}assets/glyphs/products.svg" class="mr-3" alt="...">
 							<div class="media-body">
-								<p class="font-weight-bold h3">Proizvodi</p>
+								<a href="{{root}}onama/">
+									<p class="font-weight-bold h3">Proizvodi</p>
+								</a>
 								<div class="row justify-content-start">
 									<div class="col-12 col-md-5">
 										<ul class="nav flex-column">
 											<li class="nav-item">
-												<a class="nav-link active" href="{{root}}proizvodi/stampane-selotejp-trake/">Štampane selotejp
-													trake</a>
+												<a class="nav-link active" href="{{root}}proizvodi/stampane-selotejp-trake/">Štampane selotejp trake</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="{{root}}proizvodi/selotejp-trake/">Selotejp trake</a>
@@ -115,15 +114,17 @@
 						<div class="media">
 							<img src="{{root}}assets/glyphs/about.svg" class="mr-3" alt="...">
 							<div class="media-body">
+								<a href="{{root}}onama/">
 								<p class="font-weight-bold h3">O nama</p>
-								<ul class="nav flex-column">
+							</a>
+								<!-- <ul class="nav flex-column">
 									<li class="nav-item">
 										<a class="nav-link" href="{{root}}">Rad u kompaniji</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="{{root}}">Tehnologija</a>
 									</li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 
@@ -133,13 +134,18 @@
 						<div class="media">
 							<img src="{{root}}assets/glyphs/contact.svg" class="mr-3" alt="...">
 							<div class="media-body">
-								<p class="font-weight-bold h3">Kontakt</p>
+								<a href="{{root}}onama/">
+									<p class="font-weight-bold h3">Kontakt</p>
+								</a>
 								<ul class="nav flex-column">
 									<li class="nav-item">
-										<a class="nav-link active" href="{{root}}">Kako do nas</a>
+										<a class="nav-link active" href="{{root}}kontakt/index.html#map">Kako do nas</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="{{root}}">Kontaktirajte nas</a>
+										<a class="nav-link" href="{{root}}kontakt/index.html#callus">Pozovite nas</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{{root}}kontakt/index.html#contact">Pišite nam</a>
 									</li>
 								</ul>
 							</div>
@@ -152,8 +158,7 @@
 
 		<div class="navbar-right d-sm-none" id="header-right">
 			<div class="navbar-right-content d-flex flex-column justify-content-between">
-				<div class="mobile-menu"><a class="navbar-right-close mb-4" href="" data-id="header-right-close"><img
-							src="{{root}}assets/glyphs/close.svg" width="32" /></a>
+				<div class="mobile-menu"><a class="navbar-right-close mb-4" href="" data-id="header-right-close"><img src="{{root}}assets/glyphs/close.svg" width="32" /></a>
 					<div class="navbar-nav">
 						<div class="nav-item"><a class="nav-link text-dark" href="{{root}}">Pocetna</a></div>
 						<div class="nav-item"><a class="nav-link text-dark" href="{{root}}onama/">O nama</a></div>
@@ -162,20 +167,10 @@
 					</div>
 				</div>
 				<div>
-					<p class="mb-3"><a class="transparent-invert-link" href=""><img src="{{root}}assets/glyphs/instagram-small.svg"
-								width="16" /></a><a class="transparent-invert-link ml-2" href=""><img
-								src="{{root}}assets/glyphs/facebook-small.svg" width="16" /></a><a class="transparent-invert-link ml-2"
-							href=""><img src="{{root}}assets/glyphs/twitter-small.svg" width="16" /></a><a
-							class="transparent-invert-link ml-2" href=""><img src="{{root}}assets/glyphs/pinterest-small.svg"
-								width="16" /></a><a class="transparent-invert-link ml-2" href=""><img
-								src="{{root}}assets/glyphs/thumbler-small.svg" width="16" /></a></p>
-					<p class="small mb-0"><span class="d-block d-xl-inline text-muted mb-1 mb-xl-0 mr-2">&copy; 2019 KoracR. All
-							right
-							reserved.</span><a class="text-muted mr-2" href=""><span>Privacy Policy</span></a><a class="text-muted"
-							href=""><span>Terms of Service</span></a></p>
+					<p class="mb-3"><a class="transparent-invert-link" href=""><img src="{{root}}assets/glyphs/instagram-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="{{root}}assets/glyphs/facebook-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="{{root}}assets/glyphs/twitter-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="{{root}}assets/glyphs/pinterest-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="{{root}}assets/glyphs/thumbler-small.svg" width="16" /></a></p>
+					<p class="small mb-0"><span class="d-block d-xl-inline text-muted mb-1 mb-xl-0 mr-2">&copy; 2020 KoracR. All right reserved.</span><a class="text-muted mr-2" href=""><span>Privacy Policy</span></a><a class="text-muted" href=""><span>Terms of Service</span></a></p>
 				</div>
 			</div>
-			<div class="navbar-right-content weight-700"><a class="navbar-right-close mb-4" href=""
-					data-id="headers-2-sidebar-close"><img src="{{root}}assets/glyphs/close.svg" width="32" /></a></div>
+			<div class="navbar-right-content weight-700"><a class="navbar-right-close mb-4" href="" data-id="headers-2-sidebar-close"><img src="{{root}}assets/glyphs/close.svg" width="32" /></a></div>
 		</div>
 		<!--HEADER - end-->

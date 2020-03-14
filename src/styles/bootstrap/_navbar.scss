@@ -410,7 +410,7 @@
     }
 
     @include media-breakpoint-up('sm') {
-      max-width: 40%;
+      max-width: 100%;
     }
 
     @include media-breakpoint-up('md') {

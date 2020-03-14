@@ -69,7 +69,7 @@ a {
 
 .navbar-up .nav-products .nav-link {
   padding: 0 !important;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.25;
 }
 
@@ -113,10 +113,11 @@ a {
   border-radius: 6px;
   padding-left: 3rem;
   padding-right: 3rem;
-  transition: .6s all;
+  transition: 250ms all;
+
   &:hover {
     transform: translate(0, -6px);
-    transition: .6s all;
+    transition: 250ms all;
   }
 
   @include media-breakpoint-down(sm) {
@@ -133,6 +134,29 @@ a {
   background-color: $yellow;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
 }
 
 //---- Typography
