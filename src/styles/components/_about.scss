@@ -7,6 +7,10 @@
   }
 }
 
+.about-transform {
+  transform: translateY(-12vw);
+}
+
 .about-cover-background {
   height: 100vh;
   max-height: 100%;
@@ -35,6 +39,7 @@
 
   h2 {
     color: $primary;
+
     @include media-breakpoint-down(sm) {
       font-size: 1rem;
       max-width: 20ch;
@@ -47,6 +52,7 @@
     @include media-breakpoint-down(lg) {
       font-size: 4rem;
     }
+
     @include media-breakpoint-down(sm) {
       font-size: 10vw;
     }
@@ -69,7 +75,7 @@
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  padding: 15vw 0 0 0;
+  padding: 10vw 0 0 0;
   transform: translateY(-12vw);
   width: 100%;
   background-color: transparent;

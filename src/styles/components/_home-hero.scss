@@ -38,6 +38,8 @@
   }
 
   .display-3 {
+    // font-size: 4.125rem !important;
+    // line-height: 1.2 !important;
     @include media-breakpoint-down(md) {
       font-size: 7vw;
     }
