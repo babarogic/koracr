@@ -7076,24 +7076,42 @@ a.text-white:hover, a.text-white:focus {
 .navbar-nav--body {
   background-color: #33383b;
   border-radius: .5rem;
-  padding: 1rem 1rem 1rem 2rem; }
-  .navbar-nav--body .nav-item a {
-    color: white; }
-    .navbar-nav--body .nav-item a:hover {
-      color: #FFC82F; }
-    .navbar-nav--body .nav-item a h5:hover {
-      color: #FFC82F !important; }
-    .navbar-nav--body .nav-item a h4:hover {
-      cursor: pointer !important; }
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.navbar-nav--body .nav-item a {
+  color: white;
+}
+
+.navbar-nav--body .nav-item a:hover {
+  color: #FFC82F;
+}
+
+.navbar-nav--body .nav-item a h5:hover {
+  color: #FFC82F !important;
+}
+
+.navbar-nav--body .nav-item a h4:hover {
+  cursor: pointer !important;
+}
+
+.card-kar {
+  padding: 3rem;
+}
 
 #about-hero .container-fluid .row {
-  height: 80vh; }
-  @media (max-width: 991.98px) {
-    #about-hero .container-fluid .row {
-      height: 85vh; } }
+  height: 80vh;
+}
+
+@media (max-width: 991.98px) {
+  #about-hero .container-fluid .row {
+    height: 85vh;
+  }
+}
 
 .about-transform {
-  transform: translateY(-12vw); }
+  transform: translateY(-12vw);
+}
 
 .about-cover-background {
   height: 100vh;

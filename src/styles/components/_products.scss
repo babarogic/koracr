@@ -171,10 +171,15 @@
         color: $primary !important;
       }
     }
+
     h4 {
       &:hover {
         cursor: pointer !important;
       }
     }
   }
+}
+
+.card-kar {
+  padding: 3rem;
 }
