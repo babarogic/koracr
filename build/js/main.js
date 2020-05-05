@@ -47,12 +47,13 @@ var mySwiperHome = new Swiper('#home-gallery', {
 
 
 var mySwiperProduct = new Swiper('#product-gallery', {
-  speed: 400,
-  loop: true,
-  navigation: {
-    nextEl: '#product-gallery-next',
-    prevEl: '#product-gallery-prev',
-  }
+    speed: 400,
+    loop: true,
+    autoplay: {delay: 3000},
+    navigation: {
+        nextEl: '#product-gallery-next',
+        prevEl: '#product-gallery-prev',
+    }
 });
 
 var mySwiperProductTwo = new Swiper('#productTwo-gallery', {

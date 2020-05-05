@@ -54,7 +54,7 @@ a {
 .navbar {
   position: fixed !important;
   width: 100% !important;
-  padding: 1rem 1.5rem 0 1.5rem;
+  padding: 1.5rem 2rem;
   transition: 250ms all;
 
   @include media-breakpoint-down(sm) {
@@ -125,11 +125,9 @@ a {
   &:hover {
     transform: translate(0, 4px);
     transition: 250ms all;
-    box-shadow:
-      0 1.8px 0.1px rgba(0, 0, 0, 0.057),
-      0 2.3px 0.8px rgba(0, 0, 0, 0.09),
-      0 3.3px 2.3px rgba(0, 0, 0, 0.115),
-    ;
+    box-shadow: 0 1.8px 0.1px rgba(0, 0, 0, 0.057),
+    0 2.3px 0.8px rgba(0, 0, 0, 0.09),
+    0 3.3px 2.3px rgba(0, 0, 0, 0.115);
 
   }
 

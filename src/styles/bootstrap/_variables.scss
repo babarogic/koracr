@@ -198,42 +198,44 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg:              1.5 !default;
-$line-height-sm:              1.5 !default;
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
 
-$border-width:                1px !default;
-$card-border-width:           0 !default;
-$border-color:                $gray-300 !default;
+$border-width: 1px !default;
+$card-border-width: 0 !default;
+$border-color: $gray-300 !default;
 
-$border-radius:               0 !default;
-$border-radius-lg:            0 !default;
-$border-radius-sm:            0 !default;
+$border-radius: 0 !default;
+$border-radius-lg: 0 !default;
+$border-radius-sm: 0 !default;
 
-$box-shadow-sm:               0 1px 3px rgba($black, .2) !default;
-$box-shadow:                  0 1px 3px rgba($black, .2) !default;
-$box-shadow-lg:               0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-                              0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-                              0 12.5px 10px rgba(0, 0, 0, 0.035),
-                              0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-                              0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-                              0 100px 80px rgba(0, 0, 0, 0.07) !default;
+$box-shadow-sm: 0 1px 3px rgba($black, .2) !default;
+$box-shadow: 0 1.8px 1.6px -2px rgba(0, 0, 0, 0.029),
+0 4.9px 5.4px -2px rgba(0, 0, 0, 0.043),
+0 10px 24px -2px rgba(0, 0, 0, 0.07) !default;
+$box-shadow-lg: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+0 12.5px 10px rgba(0, 0, 0, 0.035),
+0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+0 100px 80px rgba(0, 0, 0, 0.07) !default;
 
-$component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-color: $white !default;
+$component-active-bg: theme-color("primary") !default;
 
-$caret-width:                 .3rem !default;
-$caret-border-width:          0.125rem !default;
+$caret-width: .3rem !default;
+$caret-border-width: 0.125rem !default;
 
-$transition-base:             all .2s ease-in-out !default;
-$transition-fade:             opacity .15s linear !default;
-$transition-collapse:         height .35s ease !default;
+$transition-base: all .2s ease-in-out !default;
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
 
 
 // Fonts
@@ -241,43 +243,43 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Chivo", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-sans-serif !default;
+$font-family-sans-serif: "Chivo", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-base: 1.125rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-sm: ($font-size-base * .875) !default;
 
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-medium:          500 !default;
-$font-weight-bold:            700 !default;
-$font-weight-extrabold:       900 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extrabold: 900 !default;
 
-$font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.5 !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.6 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 1.5 !default;
-$h3-font-size:                $font-size-base * 1.125 !default;
-$h4-font-size:                $font-size-base * 1 !default;
-$h5-font-size:                $font-size-base * 0.875 !default;
-$h6-font-size:                $font-size-base * 0.875 !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 1.5 !default;
+$h3-font-size: $font-size-base * 1.125 !default;
+$h4-font-size: $font-size-base * 1 !default;
+$h5-font-size: $font-size-base * 0.875 !default;
+$h6-font-size: $font-size-base * 0.875 !default;
 
-$h1-line-height:              1.2 !default;
-$h2-line-height:              1.33 !default;
-$h3-line-height:              1.55 !default;
-$h4-line-height:              1.5 !default;
-$h5-line-height:              1.42 !default;
-$h6-line-height:              1.5 !default;
+$h1-line-height: 1.2 !default;
+$h2-line-height: 1.33 !default;
+$h3-line-height: 1.55 !default;
+$h4-line-height: 1.5 !default;
+$h5-line-height: 1.42 !default;
+$h6-line-height: 1.5 !default;
 
-$h1-letter-spacing:           -0.5px !default;
-$h2-letter-spacing:           -0.1px !default;
-$h3-letter-spacing:           0 !default;
-$h4-letter-spacing:           0.1px !default;
-$h5-letter-spacing:           0 !default;
+$h1-letter-spacing: -0.5px !default;
+$h2-letter-spacing: -0.1px !default;
+$h3-letter-spacing: 0 !default;
+$h4-letter-spacing: 0.1px !default;
+$h5-letter-spacing: 0 !default;
 $h6-letter-spacing:           0 !default;
 
 $h1-margin-bottom:            ($spacer * 1.25) !default;
