@@ -6,10 +6,11 @@
 
 .home-technology-background {
   width: 100%;
-  background-image: url(../assets/pictures/technology-background.jpg);
+  background-image: url(../assets/pictures/home-cover-2.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: $gray-dark;
+
   &::before {
     content: '';
     position: absolute;

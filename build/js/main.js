@@ -22,10 +22,14 @@ $(function () {
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 50) {
-      $(".header").addClass("active");
+    $(".header").addClass("active");
+    $(".btnChange").removeClass("btn-dark").addClass("btn-primary");
+    $(".icon").removeClass("icon-burger").addClass("icon-burgerWhite");
   } else {
-      //remove the background property so it comes transparent again (defined in your css)
-     $(".header").removeClass("active");
+    //remove the background property so it comes transparent again (defined in your css)
+    $(".header").removeClass("active");
+    $(".btnChange").removeClass("btn-primary").addClass("btn-dark");
+    $(".icon").removeClass("icon-burgerWhite").addClass("icon-burger");
   }
 });
 
@@ -59,6 +63,7 @@ var mySwiperProduct = new Swiper('#product-gallery', {
 var mySwiperProductTwo = new Swiper('#productTwo-gallery', {
   speed: 400,
   loop: true,
+  autoplay: {delay: 3000},
   navigation: {
     nextEl: '#productTwo-gallery-next',
     prevEl: '#productTwo-gallery-prev',
@@ -69,3 +74,46 @@ var mySwiperProductTwo = new Swiper('#productTwo-gallery', {
   },
 
 });
+
+
+// Contact Form
+
+(function ($) {
+  'use strict';
+
+  var form = $('.contact__form'),
+      message = $('.contact__msg'),
+      form_data;
+
+  // Success function
+  function done_func(response) {
+    message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+    message.text(response);
+    setTimeout(function () {
+      message.fadeOut();
+    }, 2000);
+    form.find('input:not([type="submit"]), textarea').val('');
+  }
+
+  // fail function
+  function fail_func(data) {
+    message.fadeIn().removeClass('alert-success').addClass('alert-success');
+    message.text(data.responseText);
+    setTimeout(function () {
+      message.fadeOut();
+    }, 2000);
+  }
+
+  form.submit(function (e) {
+    e.preventDefault();
+    form_data = $(this).serialize();
+    $.ajax({
+      type: 'POST',
+      url: form.attr('action'),
+      data: form_data
+    })
+        .done(done_func)
+        .fail(fail_func);
+  });
+
+})(jQuery);

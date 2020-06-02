@@ -23,16 +23,17 @@ gulp.task('compile-html', function () {
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
-      partials: 'src/components/',
-      helpers: 'src/html/',
-      data: 'src/data/',
-      pageLayouts: {
-        'proizvodi': 'proizvodi',
-        'kontakt': 'kontakt'
-      }
+        partials: 'src/components/',
+        helpers: 'src/html/',
+        data: 'src/data/',
+        pageLayouts: {
+            'proizvodi': 'proizvodi',
+            'kontakt': 'kontakt',
+            'onama': 'onama'
+        }
     }))
-    .pipe(gulp.dest('build'));
-})
+      .pipe(gulp.dest('build'));
+});
 
 gulp.task('resetPages', (done) => {
   panini.refresh();

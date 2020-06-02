@@ -192,7 +192,8 @@
   background-image: $carousel-control-prev-icon-bg;
 }
 .carousel-control-next-icon {
-  background-image: $carousel-control-next-icon-bg;
+  //background-image: $carousel-control-next-icon-bg;
+  background-image: url(../assets/glyphs/right-arrow.svg) !important;
 }
 
 

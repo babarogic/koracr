@@ -958,31 +958,34 @@ $breadcrumb-border-radius:          $border-radius !default;
 
 $carousel-control-color:            $black !default;
 $carousel-control-width:            59px !default;
-$carousel-control-opacity:          .5 !default;
+$carousel-control-opacity: .5 !default;
 
-$carousel-indicator-width:          6px !default;
-$carousel-indicator-height:         6px !default;
-$carousel-indicator-spacer:         0.25rem !default;
-$carousel-indicator-active-bg:      $black !default;
+$carousel-indicator-width: 6px !default;
+$carousel-indicator-height: 6px !default;
+$carousel-indicator-spacer: 0.25rem !default;
+$carousel-indicator-active-bg: $black !default;
 
-$carousel-caption-width:            70% !default;
-$carousel-caption-color:            $white !default;
+$carousel-caption-width: 70% !default;
+$carousel-caption-color: $white !default;
 
-$carousel-control-icon-width:       15px !default;
-$carousel-control-icon-height:      30px !default;
+$carousel-control-icon-width: 48px !default;
+$carousel-control-icon-height: 48px !default;
 
-$carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjMzcHgiIHZpZXdCb3g9IjAgMCAxNyAzMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5MaW5lPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJBcnJvd3MtLy1TbGlkZXItLy1CdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4wMDAwMDAsIC03LjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJMaW5lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjQwNTcxNCwgMjMuNjk4Mjg2KSBzY2FsZSgtMSwgMSkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtNy40MDU3MTQsIC0yMy42OTgyODYpICIgcG9pbnRzPSI3LjQwNTcxNDI5IDMwLjA0MzMzOTggMjIuMjE3MTQyOSAxNS4yMzE5MTEzIDIzLjI3NzgwMyAxNi4yOTI1NzE0IDcuNDA1NzE0MjkgMzIuMTY0NjYwMiAtOC40NjYzNzQ0NiAxNi4yOTI1NzE0IC03LjQwNTcxNDI5IDE1LjIzMTkxMTMiPjwvcG9seWdvbj4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg=="), "#", "%23") !default;
-$carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjMzcHgiIHZpZXdCb3g9IjAgMCAxNyAzMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5MaW5lPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJBcnJvd3MtLy1TbGlkZXItLy1GdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4wMDAwMDAsIC03LjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJMaW5lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjQwNTcxNCwgMjMuNjk4Mjg2KSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC03LjQwNTcxNCwgLTIzLjY5ODI4NikgIiBwb2ludHM9IjcuNDA1NzE0MjkgMzAuMDQzMzM5OCAyMi4yMTcxNDI5IDE1LjIzMTkxMTMgMjMuMjc3ODAzIDE2LjI5MjU3MTQgNy40MDU3MTQyOSAzMi4xNjQ2NjAyIC04LjQ2NjM3NDQ2IDE2LjI5MjU3MTQgLTcuNDA1NzE0MjkgMTUuMjMxOTExMyI+PC9wb2x5Z29uPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+"), "#", "%23") !default;
+$carousel-control-prev-icon-bg: url(../assets/glyphs/left-arrow.svg) !default;
+$carousel-control-next-icon-bg: url(../assets/glyphs/right-arrow.svg) !default;
 
-$carousel-transition:               transform .6s ease !default; // Define transform transition first if using multiple transitons (e.g., `transform 2s ease, opacity .5s ease-out`)
+//$carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjMzcHgiIHZpZXdCb3g9IjAgMCAxNyAzMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5MaW5lPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJBcnJvd3MtLy1TbGlkZXItLy1CdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4wMDAwMDAsIC03LjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJMaW5lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjQwNTcxNCwgMjMuNjk4Mjg2KSBzY2FsZSgtMSwgMSkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtNy40MDU3MTQsIC0yMy42OTgyODYpICIgcG9pbnRzPSI3LjQwNTcxNDI5IDMwLjA0MzMzOTggMjIuMjE3MTQyOSAxNS4yMzE5MTEzIDIzLjI3NzgwMyAxNi4yOTI1NzE0IDcuNDA1NzE0MjkgMzIuMTY0NjYwMiAtOC40NjYzNzQ0NiAxNi4yOTI1NzE0IC03LjQwNTcxNDI5IDE1LjIzMTkxMTMiPjwvcG9seWdvbj4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg=="), "#", "%23") !default;
+//$carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjMzcHgiIHZpZXdCb3g9IjAgMCAxNyAzMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5MaW5lPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJBcnJvd3MtLy1TbGlkZXItLy1GdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4wMDAwMDAsIC03LjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJMaW5lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjQwNTcxNCwgMjMuNjk4Mjg2KSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC03LjQwNTcxNCwgLTIzLjY5ODI4NikgIiBwb2ludHM9IjcuNDA1NzE0MjkgMzAuMDQzMzM5OCAyMi4yMTcxNDI5IDE1LjIzMTkxMTMgMjMuMjc3ODAzIDE2LjI5MjU3MTQgNy40MDU3MTQyOSAzMi4xNjQ2NjAyIC04LjQ2NjM3NDQ2IDE2LjI5MjU3MTQgLTcuNDA1NzE0MjkgMTUuMjMxOTExMyI+PC9wb2x5Z29uPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+"), "#", "%23") !default;
+
+$carousel-transition: transform .6s ease !default; // Define transform transition first if using multiple transitons (e.g., `transform 2s ease, opacity .5s ease-out`)
 
 
 // Close
 
-$close-font-size:                   $font-size-base * 1.5 !default;
-$close-font-weight:                 $font-weight-bold !default;
-$close-color:                       $black !default;
-$close-text-shadow:                 0 1px 0 $white !default;
+$close-font-size: $font-size-base * 1.5 !default;
+$close-font-weight: $font-weight-bold !default;
+$close-color: $black !default;
+$close-text-shadow: 0 1px 0 $white !default;
 
 // Code
 
