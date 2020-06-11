@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "gbabarogic@gmail.com";
+        $mail_to = "koractim@gmail.com";
 
         # Sender Data
         $subject = trim($_POST["subject"]);
@@ -23,7 +23,7 @@
         $content = "Ime: $name\n";
         $content .= "Email: $email\n\n";
         $content .= "Telefon: $phone\n";
-        $content .= "Tema: $theme\n";
+        $content .= "Tema: $subject\n";
         $content .= "Poruka:\n$message\n";
 
         # email headers.
@@ -34,11 +34,11 @@
         if ($success) {
             # Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Hvala! Vaša poruka je uspešno poslata.";
         } else {
             # Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong, we couldn't send your message.";
+            echo "Vaša poruka nije uspešno poslata, pokušajte kasnije.";
         }
 
     } else {

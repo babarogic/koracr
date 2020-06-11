@@ -112,17 +112,16 @@ a {
 .btn-primary {
   color: $gray-900 !important;
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: bold;
   border-radius: 6px;
   padding-left: 3rem;
   padding-right: 3rem;
   transition: 250ms all;
-  box-shadow:
-    0 0.7px 0.6px -2px rgba(0, 0, 0, 0.044),
-    0 1.8px 1.5px -2px rgba(0, 0, 0, 0.071),
-    0 3.7px 3px -2px rgba(0, 0, 0, 0.086),
-    0 7.7px 6.2px -2px rgba(0, 0, 0, 0.088),
+  box-shadow: 0 0.7px 0.6px -2px rgba(0, 0, 0, 0.044),
+  0 1.8px 1.5px -2px rgba(0, 0, 0, 0.071),
+  0 3.7px 3px -2px rgba(0, 0, 0, 0.086),
+  0 7.7px 6.2px -2px rgba(0, 0, 0, 0.088),
     0 21px 17px -2px rgba(0, 0, 0, 0.07);
 
   &:hover {
