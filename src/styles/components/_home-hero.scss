@@ -10,20 +10,20 @@
 }
 
 .home-cover-background {
-  height: 55vw;
-  max-height: 100%;
-  min-width: 300px;
-  background-image: url(../assets/pictures/selotejp-home.jpg);
-  background-position: center;
-  background-size: cover;
+    height: 55vw;
+    max-height: 100%;
+    min-width: 300px;
+    background-image: url(../assets/pictures/selotejp-home.webp);
+    background-position: center;
+    background-size: cover;
 
-  @include media-breakpoint-down(sm) {
-    height: 90vw !important;
-    background-position: 70% top;
-  }
+    @include media-breakpoint-down(sm) {
+        height: 90vw !important;
+        background-position: 70% top;
+    }
 
-  @include media-breakpoint-down(md) {
-    height: 80vw;
+    @include media-breakpoint-down(md) {
+        height: 80vw;
   }
 
   @include media-breakpoint-only(lg) {
