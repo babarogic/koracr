@@ -1,0 +1,13 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^component\/content\/category\/86\-pocetna\-prazna\.html$ "https\:\/\/koracr\.co\.rs\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^en\/about\-us\.html$ "https\:\/\/www\.koracr\.co\.rs\/" [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^www\.koracr\.co\.rs$
+RewriteRule ^/?$ "https\:\/\/koracr\.co\.rs\/" [R=301,L]
+
